@@ -1,0 +1,48 @@
+#!/usr/bin/env ruby
+
+passthrough '/assets/**/*'
+
+compile '/**/*.slim' do
+  filter :slim
+
+  layout '/default.*'
+
+  write item.identifier.without_ext + '.html'
+end
+
+compile '/story/*.md' do
+  filter :redcarpet, options: {
+    fenced_code_blocks: true
+  }
+
+  layout '/story.*'
+
+  write item.identifier.without_ext + '/index.html'
+end
+
+# compile '/**/*.md' do
+#   filter :redcarpet, options: {
+#     fenced_code_blocks: true
+#   }
+#
+#   layout '/default.*'
+#
+#   write item.identifier.without_ext + '.html'
+# end
+
+# compile '/**/*.html' do
+#   layout '/default.*'
+#
+#   if item.identifier =~ '**/index.*'
+#     write item.identifier.to_s
+#   else
+#     write item.identifier.without_ext + '/index.html'
+#   end
+# end
+
+compile '/**/*' do
+  write item.identifier.to_s
+end
+
+layout '/**/*.slim', :slim
+layout '/**/*', :erb

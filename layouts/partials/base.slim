@@ -1,0 +1,27 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    meta name="description" content="#{@config.dig(:site, :description)}"
+    meta name="author" content="#{@config.dig(:site, :author)}"
+
+    title
+      == @config.dig(:site, :title)
+
+    link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans%7CFira+Mono" media="all"
+    link rel="icon" href="/assets/images/favicon.png"
+
+    link rel="stylesheet" href="/assets/css/bootstrap.min.css"
+    link rel="stylesheet" href="/assets/css/variables.css"
+    link rel="stylesheet" href="/assets/css/prism.css"
+
+  body.bg-black data-bs-theme="dark"
+    div.container
+      == render '/partials/navbar.*'
+      == yield
+      == render '/partials/footer.*'
+
+    script src="/asstes/js/bootstrap.min.js"
+    script src="/assets/js/prism.js"
