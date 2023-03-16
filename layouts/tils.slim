@@ -1,0 +1,6 @@
+= render '/partials/base.*' do
+  main
+    h1.m-5.text-center Today I Learned
+    section
+      - @item[:items].each do |til|
+        == render '/partials/til.*', til: @items[til]

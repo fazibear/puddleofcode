@@ -7,6 +7,26 @@ layout '/**/*', :erb
 
 preprocess do
   add_pagination_for('/story/*', '/stories', 12)
+  add_pagination_for('/til/*', '/tils', 12)
+  add_pagination_for('/project/*', '/projects', 12)
+end
+
+compile /\/stories.*/ do
+  layout '/stories.*'
+
+  write item.identifier.without_ext + '/index.html'
+end
+
+compile /\/tils.*/ do
+  layout '/tils.*'
+
+  write item.identifier.without_ext + '/index.html'
+end
+
+compile /\/projects.*/ do
+  layout '/projects.*'
+
+  write item.identifier.without_ext + '/index.html'
 end
 
 compile '/**/*.slim' do
@@ -15,12 +35,6 @@ compile '/**/*.slim' do
   layout '/default.*'
 
   write item.identifier.without_ext + '.html'
-end
-
-compile /\/stories.*/ do
-  layout '/stories.*'
-
-  write item.identifier.without_ext + '/index.html'
 end
 
 compile '/story/*.md' do

@@ -3,11 +3,13 @@ module Nanoc::Helpers
     def add_pagination_for(source, destination, per_page)
       @items
         .find_all(source)
-        .map {|story| story.identifier}
-        .reverse.each_slice(per_page)
-        .each_with_index do |stories, index|
+        .map {|item| item.identifier}
+        .reverse
+        .each_slice(per_page)
+        .with_index
+        .each do |items, index|
           identifier = destination + (index > 0 ? "/#{index}" : "")
-          @items.create('', {stories: stories, page: index}, identifier)
+          @items.create('', {items: items, page: index}, identifier)
       end
     end
   end
