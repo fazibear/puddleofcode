@@ -1,7 +1,9 @@
 = render '/partials/base.*' do
   main
     h1.m-5.text-center Stories
+    == render '/partials/pagination.*', pages: @item[:pages]
     section
       div.row.row-cols-1.row-cols-lg-3.g-3.m-4
         - @item[:items].each do |story|
           == render '/partials/story.*', story: @items[story]
+    == render '/partials/pagination.*', pages: @item[:pages]
