@@ -2,6 +2,22 @@
 
 passthrough '/assets/**/*'
 
+layout '/**/*.slim', :slim
+layout '/**/*', :erb
+
+STORIES_PER_PAGE = 12
+
+preprocess do
+  @items.find_all('/story/*').map {|story| story.identifier}.reverse.each_slice(STORIES_PER_PAGE).each_with_index do |stories, index|
+    identifier = if index > 0
+      "/stories/#{index}"
+    else
+      "/stories"
+    end
+    @items.create('', {stories: stories}, identifier)
+  end
+end
+
 compile '/**/*.slim' do
   filter :slim
 
@@ -12,7 +28,8 @@ end
 
 compile '/story/*.md' do
   filter :redcarpet, options: {
-    fenced_code_blocks: true
+    fenced_code_blocks: true,
+    disable_indented_code_blocks: true
   }
 
   layout '/story.*'
@@ -20,29 +37,34 @@ compile '/story/*.md' do
   write item.identifier.without_ext + '/index.html'
 end
 
-# compile '/**/*.md' do
-#   filter :redcarpet, options: {
-#     fenced_code_blocks: true
-#   }
-#
-#   layout '/default.*'
-#
-#   write item.identifier.without_ext + '.html'
-# end
+compile /\/stories.*/ do
+  layout '/stories.*'
 
-# compile '/**/*.html' do
-#   layout '/default.*'
-#
-#   if item.identifier =~ '**/index.*'
-#     write item.identifier.to_s
-#   else
-#     write item.identifier.without_ext + '/index.html'
-#   end
-# end
-
-compile '/**/*' do
-  write item.identifier.to_s
+  write item.identifier.without_ext + '/index.html'
 end
 
-layout '/**/*.slim', :slim
-layout '/**/*', :erb
+compile '/project/*.md' do
+  filter :redcarpet, options: {
+    fenced_code_blocks: true,
+    disable_indented_code_blocks: true
+  }
+
+  layout '/project.*'
+
+  write item.identifier.without_ext + '/index.html'
+end
+
+compile '/til/*.md' do
+  filter :redcarpet, options: {
+    fenced_code_blocks: true,
+    disable_indented_code_blocks: true
+  }
+
+  layout '/til.*'
+
+  write item.identifier.without_ext + '/index.html'
+end
+
+compile '/**/*' do
+  p "ups! #{item.identifier}"
+end

@@ -1,0 +1,24 @@
+= render '/partials/base.*' do
+  .container
+  .row
+    .col-md-2
+      | share
+    .col-md-10
+      .row
+        img.featured-image.img-fluid src="#{@item[:image]}" alt="#{@item[:title]}"
+      .row.mt-5.mb-5
+        h1
+          == @item[:title]
+      .row.article-post
+        == yield
+      .row.mt-5.mb-5
+        .col-md-2
+          a href="/author.html"
+            img.rounded-circle src="#{@config.dig(:site, :author_image)}" alt="#{@config.dig(:site, :author_nick)}" height="80px"
+        .col-md-10
+          h5
+            a href="/author.html"
+              == @config.dig(:site, :author)
+          p.text-secondary
+            span
+              == human_date(@item[:date])

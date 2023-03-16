@@ -1,26 +1,28 @@
 = render '/partials/base.*' do
   .container
-  .row
-    .col-md-2
-      | share
-    .col-md-8
-      .row.mt-5.mb-5
-        .col-md-2
-          a href="/author.html"
-            img.rounded-circle src="#{@config.dig(:site, :author_image)}" alt="#{@config.dig(:site, :author_nick)}" height="80px"
-        .col-md-8
-          h5
+    .row
+      .col-md-2
+        | share
+      .col-md-10
+        .row.mt-5.mb-5
+          .col-md-2.align-middle.text-center
             a href="/author.html"
-              == @config.dig(:site, :author)
-          p.text-secondary
-            span
-              == human_date(@item[:date])
-            br
-            span.ms-auto
-              == ttr(@item.compiled_content)
-      .row
-        h1.posttitle
-          == @item[:title]
-        img.featured-image.img-fluid src="#{@item[:image]}" alt="#{@item[:title]}"
-        .article-post
+              img.rounded-circle src="#{@config.dig(:site, :author_image)}" alt="#{@config.dig(:site, :author_nick)}" height="80px"
+          .col-md-10
+            h5
+              a href="/author.html"
+                == @config.dig(:site, :author)
+            h1
+              == @item[:title]
+            p.text-secondary
+              span
+                == human_date(@item[:date])
+              span
+                == " - "
+              span.ms-auto
+                == ttr(@item.compiled_content)
+        .row
+        .row.mb-5
+          img.featured-image.img-fluid src="#{@item[:image]}" alt="#{@item[:title]}"
+        .row.article-post
           == yield

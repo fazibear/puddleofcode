@@ -19,7 +19,7 @@ module Nanoc::Helpers
     end
 
     def human_date(date)
-      date.strftime("%-d %B %Y")
+      (date.is_a?(Date) ? date : Date.parse(date)).strftime("%-d %B %Y")
     end
   end
 end
