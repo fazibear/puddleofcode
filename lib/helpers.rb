@@ -1,5 +1,17 @@
 module Nanoc::Helpers
-  module My
+  module Pagination
+    def add_pagination_for(source, destination, per_page)
+      @items
+        .find_all(source)
+        .map {|story| story.identifier}
+        .reverse.each_slice(per_page)
+        .each_with_index do |stories, index|
+          identifier = destination + (index > 0 ? "/#{index}" : "")
+          @items.create('', {stories: stories, page: index}, identifier)
+      end
+    end
+  end
+  module Other
     def preview(string, length: 25, omission: '...')
       strip_html(string)
         .split(' ')
@@ -27,4 +39,5 @@ end
 use_helper Nanoc::Helpers::Rendering
 use_helper Nanoc::Helpers::LinkTo
 use_helper Nanoc::Helpers::Text
-use_helper Nanoc::Helpers::My
+use_helper Nanoc::Helpers::Other
+use_helper Nanoc::Helpers::Pagination

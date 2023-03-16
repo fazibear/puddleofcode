@@ -30,7 +30,7 @@ Under the umbrella we have 3 apps.
 
 This it the application we will be working on. This is the main module:
 
-```elixir
+``` elixir
 defmodule Dispatcher do
   @moduledoc """
   Dispatcher is for dispatching messages.

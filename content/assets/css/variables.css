@@ -6,6 +6,8 @@
   --bs-heading-color:;
   --bs-card-cap-color: #495057;
   --bs-pagination-color:;
+  --bs-font-monospace: "Fira Mono",Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace !important;
+  --bs-code-color: #6c757d;
 }
 
 a {
@@ -13,6 +15,5 @@ a {
 }
 
 code[class*=language-] {
-  font-family: "Fira Mono",Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace !important;
   font-size: 14px !important;
 }

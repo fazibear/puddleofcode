@@ -17,6 +17,8 @@ GEM
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
     json_schema (0.21.0)
+    kramdown (2.4.0)
+      rexml
     memo_wise (1.7.0)
     nanoc (4.12.15)
       addressable (~> 2.5)
@@ -53,6 +55,7 @@ GEM
       nanoc-core (~> 4.11, >= 4.11.15)
     nokogiri (1.14.2-arm64-darwin)
       racc (~> 1.4)
+    pandoc-ruby (2.1.7)
     parallel (1.22.1)
     pastel (0.8.0)
       tty-color (~> 0.5)
@@ -62,6 +65,7 @@ GEM
     racc (1.6.2)
     rack (2.2.6.4)
     redcarpet (3.6.0)
+    rexml (3.2.5)
     rouge (4.1.0)
     slim (5.1.0)
       temple (~> 0.10.0)
@@ -87,8 +91,10 @@ PLATFORMS
 DEPENDENCIES
   adsf
   coderay
+  kramdown
   nanoc
   nokogiri
+  pandoc-ruby
   redcarpet
   rouge
   slim

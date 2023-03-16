@@ -7,5 +7,5 @@
         a.ms-auto.text-body-secondary.fs-5 href="/stories"
           | More Stories »
       div.row.row-cols-1.row-cols-lg-3.g-3.m-4
-        = @item[:stories].each do |story|
+        - @item[:stories].each do |story|
           == render '/partials/story.*', story: @items[story]

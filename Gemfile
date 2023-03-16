@@ -1,10 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'nanoc'
-gem 'redcarpet'
 gem 'adsf'
 gem 'thin'
 gem 'slim'
-gem 'coderay'
-gem 'nokogiri'
 gem 'rouge'
+gem 'pandoc-ruby'

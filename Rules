@@ -5,17 +5,8 @@ passthrough '/assets/**/*'
 layout '/**/*.slim', :slim
 layout '/**/*', :erb
 
-STORIES_PER_PAGE = 12
-
 preprocess do
-  @items.find_all('/story/*').map {|story| story.identifier}.reverse.each_slice(STORIES_PER_PAGE).each_with_index do |stories, index|
-    identifier = if index > 0
-      "/stories/#{index}"
-    else
-      "/stories"
-    end
-    @items.create('', {stories: stories}, identifier)
-  end
+  add_pagination_for('/story/*', '/stories', 12)
 end
 
 compile '/**/*.slim' do
@@ -26,28 +17,22 @@ compile '/**/*.slim' do
   write item.identifier.without_ext + '.html'
 end
 
-compile '/story/*.md' do
-  filter :redcarpet, options: {
-    fenced_code_blocks: true,
-    disable_indented_code_blocks: true
-  }
-
-  layout '/story.*'
-
-  write item.identifier.without_ext + '/index.html'
-end
-
 compile /\/stories.*/ do
   layout '/stories.*'
 
   write item.identifier.without_ext + '/index.html'
 end
 
+compile '/story/*.md' do
+  filter :pandoc, from: :gfm, to: :html
+
+  layout '/story.*'
+
+  write item.identifier.without_ext + '/index.html'
+end
+
 compile '/project/*.md' do
-  filter :redcarpet, options: {
-    fenced_code_blocks: true,
-    disable_indented_code_blocks: true
-  }
+  filter :pandoc, from: :gfm, to: :html
 
   layout '/project.*'
 
@@ -55,10 +40,7 @@ compile '/project/*.md' do
 end
 
 compile '/til/*.md' do
-  filter :redcarpet, options: {
-    fenced_code_blocks: true,
-    disable_indented_code_blocks: true
-  }
+  filter :pandoc, from: :gfm, to: :html
 
   layout '/til.*'
 
