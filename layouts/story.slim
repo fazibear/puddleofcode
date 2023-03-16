@@ -26,3 +26,4 @@
           img.featured-image.img-fluid src="#{@item[:image]}" alt="#{@item[:title]}"
         .row.article-post
           == yield
+          == render '/partials/giscus.*'
