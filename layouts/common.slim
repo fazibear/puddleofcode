@@ -18,8 +18,9 @@
               == " - "
             span.ms-auto
               == ttr(@item.compiled_content)
+      .col.text-center.align-middle
+        - if @item[:image]
+          img src="#{@item[:image]}" alt="#{@item[:title]}" style="width: 50%"
     .row
-      - if @item[:image]
-        img.p-5.img-fluid src="#{@item[:image]}" alt="#{@item[:title]}"
       == yield
       == render '/partials/giscus.*'
