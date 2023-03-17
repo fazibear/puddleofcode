@@ -13,19 +13,19 @@ end
 compile /\/stories.*/ do
   layout '/stories.*'
 
-  write item.identifier.without_ext + '/index.html'
+  write path(item)
 end
 
 compile /\/tils.*/ do
   layout '/tils.*'
 
-  write item.identifier.without_ext + '/index.html'
+  write path(item)
 end
 
 compile /\/projects.*/ do
   layout '/projects.*'
 
-  write item.identifier.without_ext + '/index.html'
+  write path(item)
 end
 
 compile '/{story,til,project}/*.md' do
@@ -33,7 +33,7 @@ compile '/{story,til,project}/*.md' do
 
   layout '/common.*'
 
-  write item.identifier.without_ext + '/index.html'
+  write path(item)
 end
 
 compile '/**/*.slim' do
@@ -41,11 +41,7 @@ compile '/**/*.slim' do
 
   layout '/default.*'
 
-  if item.identifier =~ '/index.*'
-    write '/index.html'
-  else
-    write item.identifier.without_ext + '/index.html'
-  end
+  write path(item)
 end
 
 compile '/**/*' do
