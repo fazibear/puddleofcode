@@ -73,7 +73,7 @@ Library installed.
 
 To work with the tensorflow library, we need to generate bindings. Crystal has an application for that. All you need to do is checkout [crystal_lib](https://github.com/crystal-lang/crystal_lib) and add the `lib_tensorflow.cr` file into examples directory. Remeber to replace `{tensorflow_dir}` with directory when you checked out tensorflow.
 
-```crystal
+```ruby
 @[Include(
   "tensorflow/c/c_api.h",
   flags: "
@@ -116,13 +116,13 @@ We’ve generated the graph that needs two variables for input and returns one n
 
 Now let’s move to crystal. We need to require our bindings first.
 
-```crystal
+```ruby
 require 'lib_tensorflow'
 ```
 
 Now we’re ready! We need to initialise a `session`:
 
-```crystal
+```ruby
 opts = LibTensorflow.new_session_options
 status = LibTensorflow.new_status
 graph = LibTensorflow.new_graph
@@ -131,19 +131,19 @@ session = LibTensorflow.new_session(graph, opts, status)
 
 As you can see, we need a graph, options, and status. All of these can be done using the function from bindings. Also, we need to check if creating session was successful.
 
-```crystal
+```ruby
 puts LibTensorflow.get_code(status)
 ```
 
 All we need to do is take a status and check its code. We’re using the function from bindings. The line above should print `Ok` if everything if fine. If it’s not, we can show more detailed error message like this:
 
-```crystal
+```ruby
 puts String.new(LibTensorflow.message(status))
 ```
 
 If we have a session, we need to load a graph into.
 
-```crystal
+```ruby
 file = File.read("./graph.pb")
 buffer = LibTensorflow.new_buffer_from_string(file, file.size)
 import_opts = LibTensorflow.new_import_graph_def_options
@@ -154,7 +154,7 @@ All we need is to read data from the file, create a buffer with a function from 
 
 Again we should remember to check if everything is fine:
 
-```crystal
+```ruby
 puts LibTensorflow.get_code(status)
 ```
 
@@ -162,13 +162,13 @@ Graph loaded. Now we need to create tensors. Tensors hold input and output data.
 
 One more thing, while initialisation tensor will need a deallocation function. We just create empty function. Creating proper function is beyond the scope of this article.
 
-```crystal
+```ruby
 deloc = ->(a : Pointer(Void), b : UInt64, c: Pointer(Void)) {}
 ```
 
 Now we’re focus on inputs. We need two values. These are tensors for that:
 
-```crystal
+```ruby
 a_dims = [] of Int64
 a_data = [3.0_f32] of Float32
 a_tensor = LibTensorflow.new_tensor(
@@ -187,7 +187,7 @@ b_tensor = LibTensorflow.new_tensor(
 
 And empty one for output:
 
-```crystal
+```ruby
 c_dims = [] of Int64
 c_data = [] of Float32
 c_tensor = LibTensorflow.new_tensor(
@@ -199,7 +199,7 @@ c_tensor = LibTensorflow.new_tensor(
 
 Another thing is operations. Operations take data from tensors and write data other tensors. Tensors variable is also operation so that we can read data from. We will need three operations. They are defined in graph. Remember `a`, `b`, `c`?
 
-```crystal
+```ruby
 i1 = LibTensorflow::Output.new
 i1.oper = LibTensorflow.graph_operation_by_name(graph, "a")
 i1.index = 0
@@ -213,7 +213,7 @@ o1.index = 0
 
 To make code more readable, we create some variables for inputs and outputs:
 
-```crystal
+```ruby
 inputs = [i1, i2] of LibTensorflow::Output
 input_values = [a_tensor, b_tensor] of LibTensorflow::X_Tensor
 outputs = [o1] of LibTensorflow::Output
@@ -222,7 +222,7 @@ outputs_values = [c_tensor] of LibTensorflow::X_Tensor
 
 Now we almost have all data require to run our graph, let’s do it:
 
-```crystal
+```ruby
 optss = LibTensorflow.new_buffer
 meta = LibTensorflow.new_buffer
 target = [] of LibTensorflow::X_Operation
@@ -235,13 +235,13 @@ LibTensorflow.session_run(session, nil,
 
 Yeah! Last check of status:
 
-```crystal
+```ruby
 puts LibTensorflow.get_code(status)
 ```
 
 Where our output is? Sure, let’s take it from output tensor and print it:
 
-```crystal
+```ruby
 o = outputs_values[0]
 out_data = LibTensorflow.tensor_data(o)
 out_value = out_data.as(Float32*)
