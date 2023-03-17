@@ -24,7 +24,9 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2.1'
-      - name: Install dependencies
+      - name: Install system dependencies
+        run: sudo apt-get install pandoc
+      - name: Install ruby dependencies
         run: bundle install
       - name: Build
         run: bundle exec nanoc compile
