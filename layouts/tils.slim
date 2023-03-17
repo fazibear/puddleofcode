@@ -1,6 +1,6 @@
 = render '/partials/base.*' do
   main
-    h1.m-5.text-center Today I Learned
+    h2.m-5.text-center.text-body-secondary Today I Learned
     == render '/partials/pagination.*', pages: @item[:pages]
     section
       - @item[:items].each do |til|

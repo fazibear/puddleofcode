@@ -1,6 +1,6 @@
 = render '/partials/base.*' do
   main
-    h1.m-5.text-center Projects
+    h2.m-5.text-center.text-body-secondary Projects
     == render '/partials/pagination.*', pages: @item[:pages]
     section
       div.row.row-cols-1.row-cols-lg-2.g-3.m-4

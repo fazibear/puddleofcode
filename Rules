@@ -37,26 +37,10 @@ compile '/**/*.slim' do
   write item.identifier.without_ext + '.html'
 end
 
-compile '/story/*.md' do
+compile /\/(story|project|til)\/.*.md/ do
   filter :pandoc, from: :gfm, to: :html
 
-  layout '/story.*'
-
-  write item.identifier.without_ext + '/index.html'
-end
-
-compile '/project/*.md' do
-  filter :pandoc, from: :gfm, to: :html
-
-  layout '/project.*'
-
-  write item.identifier.without_ext + '/index.html'
-end
-
-compile '/til/*.md' do
-  filter :pandoc, from: :gfm, to: :html
-
-  layout '/til.*'
+  layout '/common.*'
 
   write item.identifier.without_ext + '/index.html'
 end
