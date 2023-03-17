@@ -3,7 +3,6 @@
 passthrough '/assets/**/*'
 
 layout '/**/*.slim', :slim
-layout '/**/*', :erb
 
 preprocess do
   add_pagination_for('/story/*', '/stories', 12)
@@ -29,18 +28,18 @@ compile /\/projects.*/ do
   write item.identifier.without_ext + '/index.html'
 end
 
-compile '/**/*.slim' do
-  filter :slim
-
-  layout '/default.*'
-
-  write item.identifier.without_ext + '.html'
-end
-
 compile /\/(story|project|til)\/.*.md/ do
   filter :pandoc, from: :gfm, to: :html
 
   layout '/common.*'
+
+  write item.identifier.without_ext + '/index.html'
+end
+
+compile '/**/*.slim' do
+  filter :slim
+
+  layout '/default.*'
 
   write item.identifier.without_ext + '/index.html'
 end
