@@ -28,7 +28,7 @@ compile /\/projects.*/ do
   write item.identifier.without_ext + '/index.html'
 end
 
-compile /\/(story|project|til)\/.*.md/ do
+compile '/{story,til,project}/*.md' do
   filter :pandoc, from: :gfm, to: :html
 
   layout '/common.*'
@@ -41,7 +41,11 @@ compile '/**/*.slim' do
 
   layout '/default.*'
 
-  write item.identifier.without_ext + '/index.html'
+  if item.identifier =~ '/index.*'
+    write '/index.html'
+  else
+    write item.identifier.without_ext + '/index.html'
+  end
 end
 
 compile '/**/*' do
