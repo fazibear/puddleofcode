@@ -16,10 +16,10 @@ html lang="en"
     link rel="stylesheet" href="/assets/css/bootstrap.min.css"
     link rel="stylesheet" href="/assets/css/variables.css"
     link rel="stylesheet" href="/assets/css/highlight.css"
-
   body.bg-black data-bs-theme="dark"
     div.container
       == render '/partials/navbar.*'
       == yield
       == render '/partials/footer.*'
+    == render '/partials/ga.*'
     script src="/assets/js/bootstrap.min.js"
