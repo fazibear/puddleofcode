@@ -5,6 +5,7 @@ passthrough '/assets/**/*'
 layout '/**/*.slim', :slim
 
 preprocess do
+  remove_drafts()
   add_pagination_for('/story/*', '/stories', 12)
   add_pagination_for('/til/*', '/tils', 5)
   add_pagination_for('/project/*', '/projects', 10)

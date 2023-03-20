@@ -51,6 +51,10 @@ module Nanoc::Helpers
     def human_date(date)
       (date.is_a?(Date) ? date : Date.parse(date)).strftime("%-d %B %Y")
     end
+
+    def remove_drafts
+      @items.delete_if { |item| ENV["GITHUB_JOB"] && item[:draft] }
+    end
   end
 end
 
