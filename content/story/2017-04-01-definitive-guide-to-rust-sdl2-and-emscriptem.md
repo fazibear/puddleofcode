@@ -293,7 +293,7 @@ fn main() {
 }
 ```
 
-We need to alternate our code when we are compling to javascript. We will use `#[cfg(target_os = “emscripten")]` to define lines that will used for javascript build and `#[cfg(not(target_os = “emscripten"))]` for standard builds.
+We need to alternate our code when we are compiling to javascript. We will use `#[cfg(target_os = “emscripten")]` to define lines that will used for javascript build and `#[cfg(not(target_os = “emscripten"))]` for standard builds.
 
 Just to be sure, let’s check if all the things are working for standard builds?
 

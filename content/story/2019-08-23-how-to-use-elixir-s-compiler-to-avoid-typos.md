@@ -140,7 +140,7 @@ Why not use the compiler to track such errors?
 
 We will use an elixir's neat feature for that!. Metaprogramming.
 
-First we need a module to store all of of the messages:
+First we need a module to store all of the messages:
 
 ```elixir
 defmodule Dispatcher.Message do

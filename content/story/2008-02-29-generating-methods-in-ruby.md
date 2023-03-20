@@ -45,7 +45,7 @@ class DynamicMethods
 end
 ```
 
-There it is. No eval, no big strings, just a method name and code block. Beautful. All examples give you same output.
+There it is. No eval, no big strings, just a method name and code block. Beautiful. All examples give you same output.
 
 ```ruby
 DynamicMethods.new.one("hello") # => Hello from 'one' method with 'hello' param

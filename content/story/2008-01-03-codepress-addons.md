@@ -10,7 +10,7 @@ image: /assets/images/stories/archived.jpg
 ---
 
 I was playing around with CodePress. There are some modification I made:
-This one updates all textareas fields when form is submited, and fix the problem with rails javascript tag hepler.
+This one updates all textareas fields when form is submitted, and fix the problem with rails javascript tag helper.
 
 ```js
 CodePress.run = function() {

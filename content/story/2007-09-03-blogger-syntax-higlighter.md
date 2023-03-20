@@ -8,7 +8,7 @@ tags:
 image: /assets/images/stories/archived.jpg
 ---
 
-My syntax highligter widget for blogger is avaiable. It's based on [SyntaxHighlighter](http://code.google.com/p/syntaxhighlighter/) 1.5.1.
+My syntax highligter widget for blogger is available. It's based on [SyntaxHighlighter](http://code.google.com/p/syntaxhighlighter/) 1.5.1.
 Package include all compressed code and brushes, works in blogger mode.
 This script also handle older/newer posts links.
 To add it check out [this](http://fazibear.googlepages.com/blogger.html) page.

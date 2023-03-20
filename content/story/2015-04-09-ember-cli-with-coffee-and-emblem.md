@@ -31,7 +31,7 @@ Change directory to our app:
 $ cd HelloEmber
 ```
 
-Lets install coffeescript support. We need to install `ember-cli-coffees6` packege. Due to some ES6 compatibilites.
+Lets install coffeescript support. We need to install `ember-cli-coffees6` package. Due to some ES6 compatibilities.
 
 ```bash
 $ ember install ember-cli-coffees6

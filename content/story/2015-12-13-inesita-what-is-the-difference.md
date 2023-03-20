@@ -20,7 +20,7 @@ Just a browser side with tools to generate new application template, generate st
 
 #### 2. Keep It Beautiful
 
-Inesita is cure isn't it ? There is a nice DSL for HTML Markup. And I want to make it even more usefull.
+Inesita is cure isn't it ? There is a nice DSL for HTML Markup. And I want to make it even more useful.
 Right now render method look like this:
 
 ```ruby

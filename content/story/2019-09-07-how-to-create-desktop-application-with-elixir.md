@@ -26,7 +26,7 @@ cd elixir_desktop_application
 
 ## Phoenix LiveView
 
-So far so good. To make things hot we will use [LiveView](https://github.com/phoenixframework/phoenix_live_view). Here is the [instalation guite](https://github.com/phoenixframework/phoenix_live_view#installation). After settings up Phoenix and LiveView, we will push things to git.
+So far so good. To make things hot we will use [LiveView](https://github.com/phoenixframework/phoenix_live_view). Here is the [installation guide](https://github.com/phoenixframework/phoenix_live_view#installation). After settings up Phoenix and LiveView, we will push things to git.
 
 ```bash
 git init .

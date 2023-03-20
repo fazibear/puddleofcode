@@ -67,7 +67,7 @@ Library installed.
 
 ## Generating bindings
 
-To work with the tensorflow library, we need to generate bindings. Crystal has an application for that. All you need to do is checkout [crystal_lib](https://github.com/crystal-lang/crystal_lib) and add the `lib_tensorflow.cr` file into examples directory. Remeber to replace `{tensorflow_dir}` with directory when you checked out tensorflow.
+To work with the tensorflow library, we need to generate bindings. Crystal has an application for that. All you need to do is checkout [crystal_lib](https://github.com/crystal-lang/crystal_lib) and add the `lib_tensorflow.cr` file into examples directory. Remember to replace `{tensorflow_dir}` with directory when you checked out tensorflow.
 
 ```ruby
 @[Include(

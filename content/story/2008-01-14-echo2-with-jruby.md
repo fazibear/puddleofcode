@@ -76,7 +76,7 @@ Create a `NumberGuessApp.rb` and include a Java magic
 include Java
 ```
 
-This make all Java stuff avaiable in ruby.
+This make all Java stuff available in ruby.
 Next we need to include Echo2 stuff.
 
 ```ruby
@@ -126,7 +126,7 @@ we can write:
 NumberGuessApp.instance
 ```
 
-getActive() method propably do something more, but this is enough for this app.
+getActive() method probably do something more, but this is enough for this app.
 Nice feature of JRuby is that we can change all method and variables names to fit ruby style, don't need to use any setters and getters.
 For example you can write:
 

@@ -33,7 +33,7 @@ Configuration:
 - PLAYER - filename of mp3 player.
 - SLEEP - time between http requests in seconds (something about 0.5s)
 - SLEEP_ON_FAIL - time after failed http request (it should be something about 1s)
-- MAX_TEXT_LENGTH - lenght that can be converted at one request (for now in 200)
+- MAX_TEXT_LENGTH - length that can be converted at one request (for now in 200)
 
 To change reader language, pass a language symbol as parameter while creating ivo object.
 

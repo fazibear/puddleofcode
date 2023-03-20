@@ -12,7 +12,7 @@ Yes, I know!
 
 >Helpers are modules that provide methods which are automatically usable in your view.
 
-But somtimes you want to use it in controllers ;)
+But sometimes you want to use it in controllers ;)
 This is my solution. Helpers are available in module named 'Helpers', so they don't brake anything. All rails helpers and named routes are included by default.
 This is simple usage:
 

@@ -11,6 +11,10 @@ preprocess do
   add_pagination_for('/project/*', '/projects', 10)
 end
 
+postprocess do
+  spellcheck("*.md")
+end
+
 compile /\/stories.*/ do
   layout '/stories.*'
 

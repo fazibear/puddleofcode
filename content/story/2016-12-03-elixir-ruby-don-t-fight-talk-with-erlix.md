@@ -199,12 +199,12 @@ DST_PROC = 'ex_rb'
 
 So, let’s describe them:
 
-- _COOKIE_ is a name of Erlang cookie. Nodes to communicate to each other have to have the same name.
-- _HOST_ host that we will connect to, in this case, is our computer
-- _NODE_NAME_ name of node written in ruby
-- _DST_NODE_NAME_ name of node that we will connect to
-- _DST_NODE_ full name of node that we connect to
-- _DST_PROC_ name of process that will receive our messages
+- `COOKIE` is a name of Erlang cookie. Nodes to communicate to each other have to have the same name.
+- `HOST` host that we will connect to, in this case, is our computer
+- `NODE_NAME` name of node written in ruby
+- `DST_NODE_NAME` name of node that we will connect to
+- `DST_NODE` full name of node that we connect to
+- `DST_PROC` name of process that will receive our messages
 
 We’ve got all information needed to connect.
 
