@@ -1,6 +1,5 @@
 ---
 date: 2015-12-13
-slug: inesita-what-is-the-difference
 title: Inesita - What Is The Difference?
 tags:
   - opal
@@ -8,10 +7,7 @@ tags:
   - frontend
   - inesita
 
-section: story
 image: /assets/images/stories/inesita.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 This is another quick post about [Inesita](http://inesita-rb.github.io/). Lot of people asked me about differences to other framework [Clearwater](https://github.com/clearwater-rb/clearwater).

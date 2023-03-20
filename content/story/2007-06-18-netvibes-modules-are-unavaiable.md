@@ -1,14 +1,10 @@
 ---
 date: 2007-06-18
-slug: netvibes-modules-are-unavaiable
 title: Netvibes Modules Are Unavaiable
 tags:
   - netvibes
 
-section: story
 image: /assets/images/stories/archived.jpg
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 Sorry, all my netvibes modules are temporarily unavailable because traffic limits per month:

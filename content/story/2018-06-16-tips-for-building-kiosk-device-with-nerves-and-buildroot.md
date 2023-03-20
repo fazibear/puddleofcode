@@ -1,6 +1,5 @@
 ---
 date: 2018-06-16
-slug: tips-for-building-kiosk-device-with-nerves-and-buildroot
 title: 7 Tips for Building Kiosk Device with Nerves and Buildroot
 tags:
   - buildroot
@@ -9,10 +8,7 @@ tags:
   - drives
   - kernel
 
-section: story
 image: /assets/images/stories/nervesbuildroot.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 For about a year I’m working on some interesting machine. The first challenge was to build a kiosk device. During working on that I’ve made a lot of research and ended up with Nerves.

@@ -1,15 +1,11 @@
 ---
 date: 2007-01-04
-slug: metal-releases-icalendar
 title: Metal Releases ICalendar
 tags:
   - ruby
   - music
 
-section: story
 image: /assets/images/stories/archived.jpg
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 This simple ruby script parse [http://www.metalstorm.ee/](http://www.metalstorm.ee/) and create ical file with new and upcoming releases.

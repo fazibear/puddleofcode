@@ -1,13 +1,9 @@
 ---
 date: 2009-11-23
-slug: moving-from-rubyforge-to-github
 title: Moving from rubyforge to github
 tags:
 
-section: story
 image: /assets/images/stories/archived.jpg
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 Finally I moved my [rubyforge](http://rubyforge.org/) repositories to github and gems to [gemcutter.org](http://gemcutter.org/):

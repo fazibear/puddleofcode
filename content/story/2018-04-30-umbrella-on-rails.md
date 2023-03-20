@@ -1,16 +1,12 @@
 ---
 date: 2018-04-30
-slug: umbrella-on-rails
 title: Umbrella On Rails
 tags:
   - rails
   - umbrella
   - ruby
 
-section: story
 image: /assets/images/stories/railsumbrella.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 So you want to have a Rails application with few other applications inside? Can I have a Rails application inside a Rails application? If you ever asked yourself such a question, you’ll find an answer. Let’s start!

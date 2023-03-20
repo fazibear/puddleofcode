@@ -1,6 +1,5 @@
 ---
 date: 2017-03-04
-slug: learning-tensorflow-with-crystal
 title: Learning Tensorflow with Crystal
 tags:
   - tensorflow
@@ -8,10 +7,7 @@ tags:
   - crystal
   - bindings
 
-section: story
 image: /assets/images/stories/tensorflowcr.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 #### Crystal bindings for Tensorflow

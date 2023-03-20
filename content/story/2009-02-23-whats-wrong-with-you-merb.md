@@ -1,15 +1,11 @@
 ---
 date: 2009-02-23
-slug: whats-wrong-with-you-merb
 title: What's wrong with You merb ?
 tags:
   - ruby
   - merb
 
-section: story
 image: /assets/images/stories/archived.jpg
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 If you get this ...

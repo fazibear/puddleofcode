@@ -1,14 +1,10 @@
 ---
 date: 2007-09-17
-slug: ivo-reader-script
 title: Ivo Reader Script
 tags:
   - ruby
 
-section: story
 image: /assets/images/stories/archived.jpg
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 This is a ruby rewrite of ivonka.sh script. This simple script read data from standard input or command line parameters using [say.expressivo.com](http://say.expressivo.com/) text to speech reader.

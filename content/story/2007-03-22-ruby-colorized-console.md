@@ -1,15 +1,11 @@
 ---
 date: 2007-03-22
-slug: ruby-colorized-console
 title: Ruby Colorized Console
 tags:
   - ruby
   - gem
 
-section: story
 image: /assets/images/stories/archived.jpg
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 I wrote a simple ruby string class extension to displays console colors easier using ANSI escape sequences.

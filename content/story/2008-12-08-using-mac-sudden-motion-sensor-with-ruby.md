@@ -1,6 +1,5 @@
 ---
 date: 2008-12-08
-slug: using-mac-sudden-motion-sensor-with-ruby
 title: Using Mac Sudden Motion Sensor with RubyInline
 tags:
   - ruby
@@ -9,10 +8,7 @@ tags:
   - c
 
 
-section: story
 image: /assets/images/stories/archived.jpg
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 Quick and dirt script for reading your macbooks sudden motion sensor:
 

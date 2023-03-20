@@ -1,6 +1,5 @@
 ---
 date: 2016-08-24
-slug: automated-elixir-code-review-with-github-credo-and-travis-ci
 title: Automated Elixir Code Review with Github, Credo and Travis CI
 tags:
   - elixir
@@ -9,10 +8,7 @@ tags:
   - github
   - travis
 
-section: story
 image: /assets/images/stories/code.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 While I was working on the Elixir, I realized that it would be nice to have some static code analysis tool integrate with you build process. In Elixir world we have a [credo](https://github.com/rrrene/credo). It’s a very nice tool we can add to our mix.exs file and analyze our project simply typing:

@@ -1,6 +1,5 @@
 ---
 date: 2016-07-21
-slug: deploy-elixir-application-with-elastic-beanstalk
 title: Deploy Elixir application to AWS Elastic Beanstalk
 tags:
   - elixir
@@ -11,10 +10,7 @@ tags:
   - beanstalk
 medium_link: https://medium.com/@fazibear/74e1bce100c6
 
-section: story
 image: /assets/images/stories/beanstalk.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 Lately I was playing with AWS. I'm just wondering how can I easily deploy Elixir application with Elastic Beanstalk.

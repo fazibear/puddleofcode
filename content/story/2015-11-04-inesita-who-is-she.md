@@ -1,6 +1,5 @@
 ---
 date: 2015-11-04
-slug: inesita-who-is-she
 title: Inesita - Who Is She?
 tags:
   - ruby
@@ -8,10 +7,7 @@ tags:
   - frontend
   - inesita
 
-section: story
 image: /assets/images/stories/inesita.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 Who am I ? I am a simple, light, Ruby front-end framework. Yes, Ruby, it's all about Ruby, and its ecosystem.

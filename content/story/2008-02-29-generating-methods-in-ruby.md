@@ -1,15 +1,11 @@
 ---
 date: 2008-02-29
-slug: generating-methods-in-ruby
 title: Generating Methods in Ruby
 tags:
   - ruby
   - tips
 
-section: story
 image: /assets/images/stories/archived.jpg
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 I was trying to find a way for generating dynamic methods.

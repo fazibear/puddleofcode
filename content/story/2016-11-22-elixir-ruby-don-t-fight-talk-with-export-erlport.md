@@ -1,6 +1,5 @@
 ---
 date: 2016-11-22
-slug: elixir-ruby-don-t-fight-talk-with-export-erlport
 title: Elixir, Ruby, don’t fight. Talk… with Export/Erlport
 tags:
   - elixir
@@ -8,10 +7,7 @@ tags:
   - ruby
   - export
 
-section: story
 image: /assets/images/stories/export.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 There are still a lot of things in Ruby world, that don’t exist in Elixir yet. To resolve that problem. I’ve done a research. Tried to figure it out if both worlds can talk to each other. And the answer is yes. They can. I’ll try to describe few ways how to do it.

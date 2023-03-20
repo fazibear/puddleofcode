@@ -1,16 +1,12 @@
 ---
 date: 2008-02-10
-slug: metal-releases-icalendar-2
 title: Metal Releases ICalendar v2
 tags:
   - javascript
   - appjet
   - music
 
-section: story
 image: /assets/images/stories/archived.jpg
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 Here is new version of icalendar feed. This version is written in javascript.

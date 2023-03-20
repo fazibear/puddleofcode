@@ -1,6 +1,5 @@
 ---
 date: 2016-12-22
-slug: story-about-inesita-ruby-frontend-framework
 title: Story About Inesita, Ruby Frontend Framework
 tags:
   - ruby
@@ -8,10 +7,7 @@ tags:
   - javascript
   - virtualdom
 
-section: story
 image: /assets/images/stories/inesita.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 [Inesita](https://github.com/inesita-rb/inesita) aims to be a simple, light, Ruby front-end framework. It’s a component based framework focused on building web applications. Inesita uses an [Opal](https://github.com/opal/opal) runtime, so you will write Ruby code instead of JavaScript. Inesita is responsible only for view layer, development process and release build mechanism. Other things like how you store and change application state depends on you. View layer is built on top of [virtual-dom](https://github.com/Matt-Esch/virtual-dom), so there is no pain to render entire tree of components lot of times. But let’s start from the beginning.

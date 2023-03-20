@@ -1,6 +1,5 @@
 ---
 date: 2015-04-09
-slug: ember-cli-with-coffee-and-emblem
 title: Ember-cli with Coffee and Emblem
 tags:
   - javascript
@@ -9,10 +8,7 @@ tags:
 crosspost_to_medium: true
 medium_link: https://medium.com/@fazibear/c253bfd67fdf
 
-section: story
 image: /assets/images/stories/embercli.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 In mean time, I want to try ember.js app. Just an ember.js app without any backend. I really don't like plain javascript. CoffeeScript it my choice, and of course emblem, slim like beautiful template engine. Get it on.

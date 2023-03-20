@@ -1,6 +1,5 @@
 ---
 date: 2016-09-30
-slug: play-sid-files-on-real-commodore-64
 title: Play SID Files on the Real Commodore 64
 tags:
   - programming
@@ -8,10 +7,7 @@ tags:
   - chiptune
   - retro
 
-section: story
 image: /assets/images/stories/commodore64.jpg
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 A long time ago, I’ve written [Inesid](https://inesid.fazibear.me/), a SID files Web Player. It looks like an old Commodore 64 program with a retro interface. Lately, I’ve added a tree view, so you can easily browse all [HVSC](http://www.hvsc.c64.org/) collection and play a file you want.

@@ -1,6 +1,5 @@
 ---
 date: 2016-12-14
-slug: elixir-ruby-don-t-fight-benchmark
 title: Elixir, Ruby, don’t fight. Benchmark!
 tags:
   - elixir
@@ -8,10 +7,7 @@ tags:
   - ruby
   - erlix
 
-section: story
 image: /assets/images/stories/benchmark.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 Now we know how to talk to Ruby from Elixir. We’ve been described 3 methods so far. Now it’s time for comparisons and benchmarks. If you want to benchmark it yourself you can use the application in this [repository](https://github.com/fazibear/exrbbench). Let’s start!

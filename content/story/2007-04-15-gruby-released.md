@@ -1,15 +1,11 @@
 ---
 date: 2007-04-15
-slug: gruby-released
 title: GRuby released
 tags:
   - ruby
   - gem
 
-section: story
 image: /assets/images/stories/archived.jpg
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 My first version of Gadu-Gadu protocol implementation in Ruby released.

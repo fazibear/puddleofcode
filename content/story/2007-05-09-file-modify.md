@@ -1,15 +1,11 @@
 ---
 date: 2007-05-09
-slug: file-modify
 title: File.modify!
 tags:
   - ruby
   - tips
 
-section: story
 image: /assets/images/stories/archived.jpg
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 Here is a little ruby File class method called modify!.

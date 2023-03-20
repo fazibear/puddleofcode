@@ -1,15 +1,11 @@
 ---
 date: 2008-06-05
-slug: include-helpers-in-controllers
 title: Include helpers in controllers
 tags:
   - ruby
   - rails
 
-section: story
 image: /assets/images/stories/archived.jpg
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 Yes, I know!

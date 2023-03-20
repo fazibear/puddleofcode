@@ -1,16 +1,12 @@
 ---
 date: 2008-01-03
-slug: codepress-addons
 title: CodePress Addons
 tags:
   - javascript
   - codepress
   - rails
 
-section: story
 image: /assets/images/stories/archived.jpg
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 I was playing around with CodePress. There are some modification I made:

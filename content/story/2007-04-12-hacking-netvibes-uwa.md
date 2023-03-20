@@ -1,15 +1,11 @@
 ---
 date: 2007-04-12
-slug: hacking-netvibes-uwa
 title: Hacking Netvibes UWA
 tags:
   - javascript
   - netvibes
 
-section: story
 image: /assets/images/stories/archived.jpg
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 >UWA is the new Netvibes API. Through it, your Netvibes widgets will be available on every widget platforms or blog systems: Netvibes of course, but also Google IG, Apple Dashboard and many more...

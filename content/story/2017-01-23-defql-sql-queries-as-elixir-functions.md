@@ -1,6 +1,5 @@
 ---
 date: 2017-01-23
-slug: defql-sql-queries-as-elixir-functions
 title: 'Defql: SQL Queries as Elixir Functions'
 tags:
   - elixir
@@ -9,10 +8,7 @@ tags:
   - orm
   - database
 
-section: story
 image: /assets/images/stories/defql.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 Elixir world is functional. There are no objects or instances at all. In this case, I asked myself a question.

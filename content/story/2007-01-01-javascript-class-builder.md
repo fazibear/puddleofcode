@@ -1,14 +1,10 @@
 ---
 date: 2007-01-01
-slug: javascript-class-builder
 title: Javascript Class Builder
 tags:
   - javascript
 
-section: story
 image: /assets/images/stories/archived.jpg
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 Simple (yet) function that make pseudo class creation simple.

@@ -1,15 +1,11 @@
 ---
 date: 2007-09-03
-slug: blogger-syntax-higlighter
 title: Blogger Syntax Highlighter
 tags:
   - javascript
   - blogger
 
-section: story
 image: /assets/images/stories/archived.jpg
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 My syntax highligter widget for blogger is avaiable. It's based on [SyntaxHighlighter](http://code.google.com/p/syntaxhighlighter/) 1.5.1.

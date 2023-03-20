@@ -1,15 +1,11 @@
 ---
 date: 2008-03-29
-slug: gedit-with-multi-terminal
 title: GEdit With Multi Terminal
 tags:
   - gedit
   - python
 
-section: story
 image: /assets/images/stories/archived.jpg
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 [GEdit](http://www.gnome.org/projects/gedit/) is nice developer editor for [GNOME](http://www.gnome.org/). [Textmate](http://macromates.com/) like snippets, file browser and embedded terminal. Last one is a nice feature, but default plugin gives you only one terminal. But wait, plugins are written in python. This is my third attempt to modify python code... It was not so bad, after few `print()`, `dir()`, and `id()` I can add and remove terminal windows within gedit :)

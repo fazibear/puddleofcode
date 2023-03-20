@@ -1,6 +1,5 @@
 ---
 date: 2017-09-10
-slug: the-beginners-guide-to-linux-kernel-module-raspbery-pi-and-led-matrix
 title: The Beginner’s Guide to Linux Kernel Module, Raspberry Pi and LED Matrix
 tags:
   - linux
@@ -9,10 +8,7 @@ tags:
   - raspberrypi
   - led
 
-section: story
 image: /assets/images/stories/leds.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 When I found an old broken bluetooth speaker with RGB LED matrix, I decided to make use of it. It will be the great challenge to connect LEDs to Raspberry and display some fancy information.

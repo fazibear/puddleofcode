@@ -1,6 +1,5 @@
 ---
 date: 2015-04-29
-slug: having-fun-with-opal-and-sprockets
 title: Having fun with opal and sprockets
 tags:
   - javascript
@@ -10,10 +9,7 @@ tags:
 crosspost_to_medium: true
 medium_link: https://medium.com/@fazibear/3c17e0958694
 
-section: story
 image: /assets/images/stories/opal.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 Let's try [Opal](http://opalrb.org). I don't want to setup a Rails application. Just static html with javascript written in Opal, stylesheets in SASS, and HTML in Slim. Also we want to use JQuery like methods to select DOM elements.

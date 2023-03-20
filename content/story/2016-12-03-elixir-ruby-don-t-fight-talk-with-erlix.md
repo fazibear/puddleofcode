@@ -1,6 +1,5 @@
 ---
 date: 2016-12-03
-slug: elixir-ruby-don-t-fight-talk-with-erlix
 title: Elixir, Ruby, don’t fight. Talk… with Erlix
 tags:
   - elixir
@@ -8,10 +7,7 @@ tags:
   - ruby
   - erlix
 
-section: story
 image: /assets/images/stories/erlix.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 This article describes another way, how Elixir and Ruby can talk to each other. We will use [Erlix](https://github.com/KDr2/erlix) this time. This method makes Ruby process act like the Erlang node, which is connected to Erlang VM over the network.

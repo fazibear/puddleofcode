@@ -1,16 +1,12 @@
 ---
 date: 2015-04-13
-slug: mruby-within-vst
 title: MRuby within VST
 tags:
   - ruby
   - mruby
   - vst
 
-section: story
 image: /assets/images/stories/mruby.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 From time to time, I want to just do something more than a Rails app. Recently I just looked at MRuby.

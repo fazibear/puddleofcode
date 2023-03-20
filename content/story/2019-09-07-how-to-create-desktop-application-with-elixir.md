@@ -1,6 +1,5 @@
 ---
 date: 2019-09-07
-slug: how-to-create-desktop-application-with-elixir
 title: How to Create Desktop Application with Elixir
 tags:
   - elixir
@@ -8,10 +7,7 @@ tags:
   - live view
   - chromium
   - electron
-section: story
 image: /assets/images/stories/desktop-app.jpg
-author: Michał Kalbarczyk
-author_image: /assets/images/authors/michal.png
 ---
 
 Writing desktop application is not an easy task. But why don't use Elixir, Phoenix and LiveView?

@@ -1,15 +1,11 @@
 ---
 date: 2007-04-14
-slug: uwa-extras
 title: UWA Extras
 tags:
   - javascript
   - netvibes
 
-section: story
 image: /assets/images/stories/archived.jpg
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 Finally, i find a simple and clean way to extend UWA API. Now you can get document, window and even app object from your widget.

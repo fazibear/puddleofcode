@@ -1,16 +1,12 @@
 ---
 date: 2008-01-14
-slug: echo2-with-jruby
 title: Echo2 with JRuby
 tags:
   - ruby
   - java
   - jruby
 
-section: story
 image: /assets/images/stories/archived.jpg
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 I want to play with jruby, and I rewrite a numberguess example application from [Echo2](http://echo.nextapp.com/site/echo2) framework into Ruby using JRuby.

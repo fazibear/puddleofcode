@@ -1,6 +1,5 @@
 ---
 date: 2017-12-27
-slug: brewing-the-firmware-for-raspberry-pi-with-elixir-and-nerves
 title: Brewing the Firmware for Raspberry PI with Elixir and Nerves
 tags:
   - elixir
@@ -8,10 +7,7 @@ tags:
   - led
   - gpio
 
-section: story
 image: /assets/images/stories/brewing.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 As the PIX PROJECT started to be a real thing. I decided to make it more dynamic. The first version written in Ruby is very static. There is no easy way to animate dots within the clock for example. Also, you have to install the whole Linux, install packages and start the application. It’s not how the firmware works right? I decided to rewrite it into Elixir and wrap it with Nerves to create firmware. Let the story begin…

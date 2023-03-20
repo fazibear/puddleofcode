@@ -1,6 +1,5 @@
 ---
 date: 2017-04-01
-slug: definitive-guide-to-rust-sdl2-and-emscriptem
 title: Definitive guide to Rust, SDL 2 and Emscripten!
 tags:
   - rust
@@ -8,10 +7,7 @@ tags:
   - emscripten
   - asm.js
 
-section: story
 image: /assets/images/stories/rustemscripten.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 So, you want to write a game? And run it in the browser? Do you like Rust? Great! I’ll show you how to write a sample program in Rust using SDL2 and how to compile it with Emscripten.

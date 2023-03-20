@@ -1,13 +1,9 @@
 ---
 date: 2014-11-25
-slug: 5-years-later
 title: 5 years later ...
 tags:
 
-section: story
 image: /assets/images/stories/archived.jpg
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 Welcome BACK!
