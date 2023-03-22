@@ -38,7 +38,7 @@ After few hours of setting up Opal environment, and figuring out how it works, I
 
 Inesita was born on July 25th, 2015. Here is a birth certificate.
 
-![first commit](../images/stories/inesitafirstcommit.png)
+![first commit](/assets/images/content/inesitafirstcommit.png)
 
 ## Goals!
 

@@ -15,7 +15,7 @@ Fish is a nice shell, its nice, lite, fast, and have a lot of features. One of t
 
 This is what I'm talking about!
 
-![fish widgets](../images/stories/fish_widgets.png)
+![fish widgets](/assets/images/content/fish_widgets.png)
 
 Widgets are refreshed in background, lets use `cron`. Write a little script that gather system information and set some variable that can be displayed in prompt.
 Create a `~/.config/fish/functions/prompt_info_update.fish`

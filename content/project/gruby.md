@@ -4,8 +4,6 @@ date: 2007-04-15
 title: gruby
 slug: gruby
 image: /assets/images/projects/rubygem.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 Gadu-Gadu (polish communicator) protocol implementation in Ruby language.

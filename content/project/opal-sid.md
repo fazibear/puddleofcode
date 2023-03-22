@@ -4,8 +4,6 @@ date: 2016-04-02
 title: opal-sid
 slug: opal-sid
 image: /assets/images/projects/opalgem.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 Hermit's [jsSID](https://github.com/hermitsoft/jsSID) wrapper for opal.
 

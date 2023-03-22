@@ -141,7 +141,7 @@ We are ready to launch DAW. If you don’t know how to use VST plugin here is a 
 
 This is how VST look like in Ableton Live (in other DAW will look different)
 
-![mrubyvst](../images/stories/vst.png)
+![mrubyvst](/assets/images/content/vst.png)
 
 Great! The plugin works, now we will look at implementation details.
 

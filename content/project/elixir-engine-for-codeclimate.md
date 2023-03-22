@@ -4,8 +4,6 @@ date: 2016-06-04
 title: Elixir Engine For CodeClimate
 slug: elixir-engine-for-codeclimate
 image: /assets/images/projects/codeclimate-credo.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 tags:
   - elixir
   - credo

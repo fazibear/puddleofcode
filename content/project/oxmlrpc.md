@@ -4,8 +4,6 @@ date: 2013-11-28
 title: oxmlrpc
 slug: oxmlrpc
 image: /assets/images/projects/rubygem.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 Simple, lightweight and fast XML-RPC client library for ruby. It's based on OX XML parser.

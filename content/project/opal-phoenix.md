@@ -4,8 +4,6 @@ date: 2015-11-15
 title: opal-phoenix
 slug: opal-phoenix
 image: /assets/images/projects/opalgem.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 Opal wrapper for [Phoenix Framework](http://phoenixframework.org/) javascript library.
 

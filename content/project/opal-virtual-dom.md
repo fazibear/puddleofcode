@@ -4,8 +4,6 @@ date: 2015-06-24
 title: opal-virtual-dom
 slug: opal-virtual-dom
 image: /assets/images/projects/opalgem.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 Opal wrapper for [virtual-dom](https://github.com/Matt-Esch/virtual-dom) javascript library. For more information see [virtual-dom wiki page](https://github.com/Matt-Esch/virtual-dom/wiki).
 

@@ -4,8 +4,6 @@ date: 2017-11-11
 title: pix
 slug: pix
 image: /assets/images/projects/pix.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 Pixel frame like project, but with Raspberry Pi inside.

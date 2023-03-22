@@ -4,8 +4,6 @@ date: 2015-06-30
 title: Sprint Poker
 slug: sprint-poker
 image: /assets/images/projects/sprintpoker.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 tags:
   - elixir
   - phoenix

@@ -4,8 +4,6 @@ date: 2015-12-02
 title: opal-airbrake
 slug: opal-airbrake
 image: /assets/images/projects/opalgem.png
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 Opal wrapper for [airbrake-js](https://github.com/airbrake/airbrake-js) javascript library.
 

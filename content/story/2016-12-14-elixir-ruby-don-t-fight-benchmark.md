@@ -76,14 +76,14 @@ erlectricity_function       18.49 K
 export_function             15.28 K - 1.21x slower
 ```
 
-![benchmarks](../images/stories/benchmarks1.png)
-![benchmarks](../images/stories/benchmarks2.png)
+![benchmarks](/assets/images/content/benchmarks1.png)
+![benchmarks](/assets/images/content/benchmarks2.png)
 Now we see that `export` is 1.21 times slower that `erlectricity`. Why ?
 Erlectricity is written as a C extension for ruby, so there is no surprise.
 
-![benchmarks](../images/stories/benchmarks3.png)
-![benchmarks](../images/stories/benchmarks4.png)
-![benchmarks](../images/stories/benchmarks5.png)
-![benchmarks](../images/stories/benchmarks6.png)
+![benchmarks](/assets/images/content/benchmarks3.png)
+![benchmarks](/assets/images/content/benchmarks4.png)
+![benchmarks](/assets/images/content/benchmarks5.png)
+![benchmarks](/assets/images/content/benchmarks6.png)
 
 More detailed charts are pretty similar .To sum it up, you have to decide what will fit your needs.
