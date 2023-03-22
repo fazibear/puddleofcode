@@ -15,6 +15,12 @@ postprocess do
   spellcheck("*.md")
 end
 
+compile '/sitemap.slim' do
+  filter :slim
+  # layout nil
+  write item.identifier.without_ext + '.xml'
+end
+
 compile /\/stories.*/ do
   layout '/stories.*'
 
