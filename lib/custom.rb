@@ -1,5 +1,9 @@
 module Nanoc::Helpers
   module Custom
+    def cannonical_path(item)
+      "#{@config.dig(:base_url)}#{path(item).gsub('index.html', '')}"
+    end
+
     def path(item)
       item.identifier.without_ext.match %r[/([^\/]+)/([0-9]+)\-([0-9]+)\-([0-9]+)\-([^\/]+)] do |match|
         return "/#{match[1]}/#{match[5]}/index.html"

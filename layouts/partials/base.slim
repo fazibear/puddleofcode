@@ -9,6 +9,7 @@ html lang="en"
     title
       == @config.dig(:site, :title)
 
+    link rel="canonical" href="#{cannonical_path(@item)}"
     link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans%7CFira+Mono" media="all"
     link rel="icon" href="/assets/images/favicon.png"
