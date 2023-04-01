@@ -51,6 +51,12 @@ Let's init out repo
 $ dot init
 ```
 
+One more thing! Need to set up one thing:
+
+```bash
+$ dot config --local status.showUntrackedFiles no
+```
+
 And we're done. All git files are in `$HOME/.dotfiles` directory.
 
 To add a file or directory we can simply:
