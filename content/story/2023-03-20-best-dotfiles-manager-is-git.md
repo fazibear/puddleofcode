@@ -34,13 +34,13 @@ Depending on our needs we can:
 Allow to backup files on whole disk:
 
 ```bash
-alias dot "git --git-dir=$HOME/.dotfiles --work-tree=/ init"
+alias dot "git --git-dir=$HOME/.dotfiles --work-tree=/"
 ```
 
 Or just in the home directory:
 
 ```bash
-alias dot "git --git-dir=$HOME/.dotfiles --work-tree=$HOME init"
+alias dot "git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 ```
 
 Great. We're just made an dot manager!
