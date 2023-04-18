@@ -15,43 +15,40 @@ postprocess do
   spellcheck("*.md")
 end
 
+compile '/404.html.slim' do
+  filter :slim
+  write '/404.html'
+end
+
 compile '/sitemap.slim' do
   filter :slim
-  # layout nil
   write item.identifier.without_ext + '.xml'
 end
 
 compile /\/stories.*/ do
   layout '/stories.*'
-
   write path(item)
 end
 
 compile /\/tils.*/ do
   layout '/tils.*'
-
   write path(item)
 end
 
 compile /\/projects.*/ do
   layout '/projects.*'
-
   write path(item)
 end
 
 compile '/{story,til,project}/*.md' do
   filter :pandoc, from: :gfm, to: :html
-
   layout '/common.*'
-
   write path(item)
 end
 
 compile '/**/*.slim' do
   filter :slim
-
   layout '/default.*'
-
   write path(item)
 end
 
