@@ -15,13 +15,16 @@ html lang="en"
         == "'#{from}': '#{to}',"
       | };
     script
-      | if (window.location.href.includes('/redirect')) {
-      |   for (const url in redirects) {
-      |     if (window.location.href.includes(url)) {
-      |       window.location.href.replace(redirects[url]);
+      | function redirectTo() {
+      |   if (window.location.href.includes('/redirect')) {
+      |     for (const url in redirects) {
+      |       if (window.location.href.includes(url)) {
+      |         return redirects[url]
+      |       };
       |     };
+      |   } else {
+      |     return '/';
       |   };
-      | } else {
-      |   window.location.href.replace('/');
       | };
+      | window.location.replace(redirectTo());
   body 404
