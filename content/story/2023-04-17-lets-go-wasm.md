@@ -11,7 +11,7 @@ WASM? WebAssembly?
 
 Lately I've started to ask myself: "Is WASM worth paying attention to?"
 
-Let's fund out. There are several languages that can be compiled into WASM. Anyway let's try GO.
+Let's find out. There are several languages that can be compiled into WASM. Anyway let's try GO.
 
 We will make a simple web application that converts image from your webcam into ascii art.
 The goal is to write as much code in Go as possible.
