@@ -7,7 +7,7 @@ tags:
 image: /assets/images/stories/go-wasm.png
 ---
 
-WASM? WebAssembly? 
+WASM? WebAssembly?
 
 Lately I've started to ask myself: "Is WASM worth paying attention to?"
 
@@ -153,7 +153,7 @@ func GetImageData() []uint8 {
 ```
 
 Fetching pixel data is more complicated. We have to fetch JS array of `uint8` into GO.
-This function takes the length of data from `canvas`, create GO array, and copy whole data into go array. 
+This function takes the length of data from `canvas`, create GO array, and copy whole data into go array.
 Voila! We have a pixel data.
 
 What's left? Convert it to asciiart.
@@ -247,7 +247,7 @@ func main() {
 }
 ```
 
-In main loop we're: 
+In main loop we're:
  - fetching data from `video`
  - drawing it on `canvas`
  - fetch pixel data from `canvas`
