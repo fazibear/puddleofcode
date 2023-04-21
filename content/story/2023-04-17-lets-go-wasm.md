@@ -311,20 +311,12 @@ Notice that the browser will give camera access only on `localhost`, or when you
 
 P.S
 
-But wait! The size! ~2MB is way to much! Yes but this is the case for other story.
+But wait! The size! ~2MB is way to much! Yes!
 
-Don't need to write whole thing yourself if you don't want. Check my [github](https://github.com/fazibear/asciifyme.go) or just an [app](https://fazibear.me/asciifyme.go/).
+Try `thinygo` compiler, ~200KB is much better!
 
+```bash
+# tinygo build -o build/asciifyme.wasm -target wasm
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
+Don't need to write whole thing yourself if you don't want. Check out my [github](https://github.com/fazibear/asciifyme.go) or just an [app](https://fazibear.me/asciifyme.go/).
