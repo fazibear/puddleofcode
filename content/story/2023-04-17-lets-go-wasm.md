@@ -11,7 +11,7 @@ WASM? WebAssembly?
 
 Lately I've started to ask myself: "Is WASM worth paying attention to?"
 
-Let's find out. There are several languages that can be compiled into WASM. Anyway let's try GO.
+Let's find out. There are few languages that can be directly compiled into WASM. Anyway let's try GO.
 
 We will make a simple web application that converts image from your webcam into ascii art.
 The goal is to write as much code in Go as possible.
@@ -22,7 +22,7 @@ Let's go!
 # go mod init asciifyme
 ```
 
-And just it, everything works! 
+And that's it, everything works!
 
 Just kidding. It's not that simple.
 
@@ -299,7 +299,7 @@ cp "$(go env GOROOT)/misc/wasm/wasm_exec.js" build/
 go build -o build/asciifyme.wasm
 ```
 
-Now we need to just:
+Now we need to run:
 
 ```bash
 # ./build.sh
@@ -307,7 +307,7 @@ Now we need to just:
 
 Serve files from `build` folder, and use the browser.
 
-Notice that the browser will give camera access only on `localhost`, or when you're using `https://`
+Notice that the browser will give camera access when you're using `https://` or `localhost`
 
 P.S
 
@@ -319,4 +319,4 @@ Try `thinygo` compiler, ~200KB is much better!
 # tinygo build -o build/asciifyme.wasm -target wasm
 ```
 
-Don't need to write whole thing yourself if you don't want. Check out my [github](https://github.com/fazibear/asciifyme.go) or just an [app](https://fazibear.me/asciifyme.go/).
+Don't need to write whole thing yourself if you don't want. Check out my [github](https://github.com/fazibear/asciifyme.go) or working an [app](https://fazibear.me/asciifyme.go/).
