@@ -27,9 +27,9 @@ And that's it, everything works!
 Just kidding. It's not that simple.
 
 We will need following pieces:
- - `webcam` - will initialize and fetch data from web cam
+ - `webcam` - will initialize and fetch image from web cam
  - `canvas` - we need this to fetch pixel data from image
- - `asciifyier` - turn image data into ascii
+ - `asciifyier` - turn image data into string
 
 The webcam:
 
@@ -75,7 +75,6 @@ func Setup() js.Value {
 	return video
 }
 ```
-
 We will call this function from the main, it will setup webcam and return `video` object to fetch data from.
 But wait! There are two callbacks `stream` and `err` we need to implement:
 
@@ -92,7 +91,7 @@ func stream(this js.Value, args []js.Value) interface{} {
 }
 ```
 
-For now we will ignore errors, just write error on console.
+For now we will ignore errors and write error on console.
 `stream` function adds a stream to the video element and listen to `canplaythrough` event.
 Another callback? Yes! `video` will call `canPlay` callback when there will be enough data.
 
@@ -136,7 +135,7 @@ func DrawImage(video js.Value) {
 }
 ```
 
-We can draw a frame from `video` just by passing it into `drawImage` function.
+We can draw a frame from `video` by passing it into `drawImage` function.
 
 ```go
 func GetImageData() []uint8 {
@@ -173,7 +172,7 @@ const (
 )
 ```
 
-We don't need any JS stuff here. Bui need to import our `canvas` to fetch its size.
+We don't need any JS stuff here. But need to import our `canvas` to fetch its size.
 
 ```go
 func Asciify(data []uint8) string {

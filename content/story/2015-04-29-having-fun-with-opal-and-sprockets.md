@@ -142,6 +142,6 @@ And open [http://localhost:9292/index.html](http://localhost:9292/index.html)! H
 
 You're lazy ? Check out [github repository](https://github.com/fazibear/opal-slim-sass-sprockets-example) or simply:
 
-```
+```bash
 $ git clone git@github.com:fazibear/opal-slim-sass-sprockets-example.git
 ```

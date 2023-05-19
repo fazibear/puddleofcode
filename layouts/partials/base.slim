@@ -7,7 +7,7 @@ html lang="en"
     meta name="author" content="#{@config.dig(:site, :author)}"
 
     title
-      == @config.dig(:site, :title)
+      == page_title
 
     link rel="canonical" href="#{cannonical_path(@item)}"
     link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"

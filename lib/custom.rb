@@ -1,36 +1,51 @@
 module Nanoc::Helpers
   module Custom
     def cannonical_path(item)
-      "#{@config.dig(:base_url)}#{path(item).gsub('index.html', '')}"
+      "#{@config.dig(:base_url)}#{path(item).gsub("index.html", "")}"
+    end
+
+    def page_title
+      title = @config.dig(:site, :title)
+      subtitle = case @item.identifier
+      when /story/
+        " - #{@item[:title]}" if @item[:title]
+      when /project/
+        " - Project - #{@item[:title]}" if @item[:title]
+      when /til/
+        " - TIL - #{@item[:title]}" if @item[:title]
+      else
+        ""
+      end
+      "#{title}#{subtitle}"
     end
 
     def path(item)
-      item.identifier.without_ext.match %r[/([^\/]+)/([0-9]+)\-([0-9]+)\-([0-9]+)\-([^\/]+)] do |match|
+      item.identifier.without_ext.match %r{/([^/]+)/([0-9]+)-([0-9]+)-([0-9]+)-([^/]+)} do |match|
         return "/#{match[1]}/#{match[5]}/index.html"
       end
 
-      if item.identifier =~ '/index.*'
-        '/index.html'
+      if "/index.*".match?(item.identifier)
+        "/index.html"
       else
-        item.identifier.without_ext + '/index.html'
+        item.identifier.without_ext + "/index.html"
       end
     end
 
-    def preview(string, length: 25, omission: '...')
+    def preview(string, length: 25, omission: "...")
       strip_html(string)
-        .split(' ')
+        .split(" ")
         .take(length)
-        .join(' ')
+        .join(" ")
         .+(omission)
     end
 
-    def ttr(string, label: ' minutes read')
+    def ttr(string, label: " minutes read")
       strip_html(string)
-        .split(' ')
+        .split(" ")
         .count
         ./(200)
-        .round()
-        .to_s()
+        .round
+        .to_s
         .+(label)
     end
 
