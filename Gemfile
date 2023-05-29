@@ -1,11 +1,13 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
-gem 'nanoc'
 gem 'adsf'
-gem 'thin'
-gem 'slim'
-gem 'rouge'
-gem 'pandoc-ruby'
-gem 'ruby-spellchecker'
-gem 'nokogiri'
 gem 'builder'
+gem 'nanoc'
+gem 'nokogiri'
+gem 'pandoc-ruby'
+gem 'rouge'
+gem 'ruby-spellchecker'
+gem 'slim'
+gem 'thin'

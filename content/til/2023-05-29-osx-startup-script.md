@@ -1,7 +1,7 @@
 ---
 date: 2023-05-29
 slug: osx-startup-script
-title: How to create custom OSX starup script?
+title: How to create custom OSX startup script?
 ---
 
 If you wondering how you can create a script that lunch things on startup?
