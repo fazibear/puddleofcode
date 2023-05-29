@@ -29,7 +29,7 @@ main
       a.ms-auto.text-body-secondary.fs-5 href="/tils"
         | More »
     .row.border.border-dark.rounded.m-4.p-4
-      h4
+      h3
         a href="#{@items.find_all('/til/*').last.path}"
           == @items.find_all('/til/*').last[:title]
       == @items.find_all('/til/*').last.compiled_content
