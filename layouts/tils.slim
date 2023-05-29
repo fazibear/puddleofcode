@@ -4,5 +4,6 @@
     == render '/partials/pagination.*', pages: @item[:pages]
     section
       - @item[:items].each do |til|
-        == render '/partials/til.*', til: @items[til]
+        .row.border.border-dark.rounded.m-4.p-4
+          == render '/partials/til.*', til: @items[til]
     == render '/partials/pagination.*', pages: @item[:pages]
