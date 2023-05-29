@@ -23,10 +23,13 @@ main
       - @items.find_all('/project/*').select{|p| p[:featured]}.each do |project|
         == render '/partials/project.*', project: project
   section
-    h4.hstack.border-bottom.p-2.border-dark
+    h4.hstack.border-bottom.p-2.border-dark class="rounded"
       span
-        | Last Lerned
+        = "Last Lerned: "
       a.ms-auto.text-body-secondary.fs-5 href="/tils"
         | More »
-    .row
-      == render '/partials/til.*', til: @items.find_all('/til/*').last
+    .row.border.border-dark.rounded.m-4.p-4
+      h4
+        a href="#{@items.find_all('/til/*').last.path}"
+          == @items.find_all('/til/*').last[:title]
+      == @items.find_all('/til/*').last.compiled_content
