@@ -16,7 +16,7 @@ a.sourceLine:empty { height: 1.2em; }
 code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode {
   padding: 1em 1em;
-  border: 1px solid rgb(33,37,41);
+  /* border: 1px solid rgb(33,37,41); */
   margin-bottom: 1em;
 }
 pre.sourceCode { margin: 0; }
