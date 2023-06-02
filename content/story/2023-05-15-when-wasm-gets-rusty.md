@@ -352,3 +352,5 @@ You'll ask what? Harder is better? Yes! Rust compiler forced me to think deeper 
 Other than that the Rust runtime is a way faster.
 
 For WASM I will choose Rust!
+
+Don't need to write whole thing yourself if you don't want. Check out my [github](https://github.com/fazibear/asciifyme.rust) or working an [app](https://fazibear.me/asciifyme.rust/).
