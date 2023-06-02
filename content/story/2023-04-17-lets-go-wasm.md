@@ -200,7 +200,7 @@ func Asciify(data []uint8) string {
 }
 ```
 
-What we're doing here? We're Taking each pixel data from array of `uint8` and creating a string. Our asciiart.
+What we're doing here? We're taking each pixel data from array of `uint8` and creating a string. Our asciiart.
 
 It's time for `main.go` ...
 
