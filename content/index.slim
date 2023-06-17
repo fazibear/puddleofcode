@@ -11,7 +11,7 @@ main
       a.ms-auto.text-body-secondary.fs-5 href="/stories"
         | More Stories »
     div.row.row-cols-1.row-cols-lg-3.g-3.m-4
-      - @items.find_all('/story/*').reverse.first(6).each do |story|
+      - @items.find_all('/story/*').reverse.first(9).each do |story|
         == render '/partials/story.*', story: story
   section
     h4.hstack.border-bottom.p-2.border-dark
