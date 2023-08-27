@@ -9,7 +9,7 @@ image: /assets/images/stories/aigit.jpg
 ---
 
 Why don't use available solution? All of them using ChatGPT. But I'm out of credits ;)
-Ofcourse I want to learn something!
+Of course I want to learn something!
 
 ## How to generate git commit message?
 
@@ -46,11 +46,11 @@ Let's generate something:
 
 ## Generating commit message
 
-Let's build something that's works offile. AI? Yes, let's use AI!
+Let's build something that's works offline. AI? Yes, let's use AI!
 
 We need model right? 
 
-Let's look at (huggingface)[https://huggingface.co/models]!
+Let's look at [huggingface](https://huggingface.co/models)!
 
 There it is: https://huggingface.co/mamiksik/T5-commit-message-generation but there is no docs :(
 But if you'll look deeper you'll find https://huggingface.co/spaces/mamiksik/commit-message-generator
