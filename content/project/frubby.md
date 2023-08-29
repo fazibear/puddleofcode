@@ -1,8 +1,6 @@
 ---
-section: project
 date: 2015-01-07
 title: frubby
-slug: frubby
 image: /images/projects/rubygem.png
 ---
 

@@ -1,6 +1,5 @@
 ---
 date: 2023-05-29
-slug: osx-startup-script
 title: How to create custom OSX startup script?
 ---
 

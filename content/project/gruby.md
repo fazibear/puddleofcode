@@ -1,8 +1,6 @@
 ---
-section: project
 date: 2007-04-15
 title: gruby
-slug: gruby
 image: /images/projects/rubygem.png
 ---
 

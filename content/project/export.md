@@ -1,8 +1,6 @@
 ---
-section: project
 date: 2016-03-25
 title: export
-slug: export
 image: /images/projects/elixirpackage.png
 ---
 

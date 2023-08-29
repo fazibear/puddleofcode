@@ -1,10 +1,6 @@
 ---
-section: til
 date: 2019-07-14
-slug: do-not-eclose-markdown-content-into-p-tag
 title: Do Not Eclose Markdown Content Into <p> Tag
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 If you are using for example Gatsby like I do, don't enlose html from markdown into `<p>` tag.

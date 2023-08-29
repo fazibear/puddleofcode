@@ -1,8 +1,6 @@
 ---
-section: project
 date: 2015-09-03
 title: airbrakex
-slug: airbrakex
 image: /images/projects/elixirpackage.png
 ---
 

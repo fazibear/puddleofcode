@@ -1,8 +1,6 @@
 ---
-section: project
 date: 2016-04-01
 title: inesid
-slug: inesid
 image: /images/projects/inesid.png
 ---
 

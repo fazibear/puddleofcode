@@ -1,6 +1,5 @@
 ---
 date: 2023-03-16
-slug: replace-text-in-files
 title: How to replace text in files?
 ---
 

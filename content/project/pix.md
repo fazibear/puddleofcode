@@ -1,8 +1,6 @@
 ---
-section: project
 date: 2017-11-11
 title: pix
-slug: pix
 image: /images/projects/pix.png
 ---
 

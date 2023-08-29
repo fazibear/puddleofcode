@@ -1,8 +1,6 @@
 ---
-section: project
 date: 2015-03-03
 title: MRuby embedded in VST
-slug: mrubyvst
 image: /images/projects/mrubyvst.png
 ---
 

@@ -1,8 +1,6 @@
 ---
-section: project
 date: 2013-11-28
 title: oxmlrpc
-slug: oxmlrpc
 image: /images/projects/rubygem.png
 ---
 

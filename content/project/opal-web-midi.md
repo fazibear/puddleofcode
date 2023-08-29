@@ -1,8 +1,6 @@
 ---
-section: project
 date: 2015-11-17
 title: opal-web-midi
-slug: opal-web-midi
 image: /images/projects/opalgem.png
 ---
 Web MIDI wrapper for Opal.

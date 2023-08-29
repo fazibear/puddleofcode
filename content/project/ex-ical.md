@@ -1,8 +1,6 @@
 ---
-section: project
 date: 2016-03-17
 title: ex_ical
-slug: ex-ical
 image: /images/projects/elixirpackage.png
 ---
 

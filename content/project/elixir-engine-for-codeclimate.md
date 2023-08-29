@@ -1,8 +1,6 @@
 ---
-section: project
 date: 2016-06-04
 title: Elixir Engine For CodeClimate
-slug: elixir-engine-for-codeclimate
 image: /images/projects/codeclimate-credo.png
 tags:
   - elixir

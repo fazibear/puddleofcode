@@ -1,8 +1,6 @@
 ---
-section: project
 date: 2016-04-02
 title: opal-sid
-slug: opal-sid
 image: /images/projects/opalgem.png
 ---
 Hermit's [jsSID](https://github.com/hermitsoft/jsSID) wrapper for opal.

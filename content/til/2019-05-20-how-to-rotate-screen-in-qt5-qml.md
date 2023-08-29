@@ -1,10 +1,6 @@
 ---
-section: til
 date: 2019-05-20
-slug: how-to-rotate-screen-in-qt5-qml
 title: How to Rotate Screen in QT5 QML?
-author: Michał Kalbarczyk
-author_image: ../images/authors/michal.png
 ---
 
 QML Code:
