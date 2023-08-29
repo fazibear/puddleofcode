@@ -26,11 +26,11 @@ Params:
     deploy-elixir-application-with-elastic-beanstalk: https://puddleofcode.com/story/deploy-elixir-application-with-elastic-beanstalk/
     deploy-elixir-application: https://puddleofcode.com/story/deploy-elixir-application-with-elastic-beanstalk/
     echo2-with-jruby: https://puddleofcode.com/story/echo2-with-jruby/
-    elixir-ruby-dont-fight-benchmark: https://puddleofcode.com/story/elixir-ruby-don-t-fight-benchmark/
-    elixir-ruby-dont-fight-talk: https://puddleofcode.com/story/elixir-ruby-don-t-fight-talk-with-export-erlport/
-    elixir-ruby-dont-fight-talk-with: https://puddleofcode.com/story/elixir-ruby-don-t-fight-talk-with/
-    elixir-ruby-dont-fight-talk-with-erlix: https://puddleofcode.com/story/elixir-ruby-don-t-fight-talk-with-erlix/
     elixir-ruby-dont-fight-talk-with-erlectricity: https://puddleofcode.com/story/elixir-ruby-don-t-fight-talk-with-erlectricity/
+    elixir-ruby-dont-fight-talk-with-erlix: https://puddleofcode.com/story/elixir-ruby-don-t-fight-talk-with-erlix/
+    elixir-ruby-dont-fight-benchmark: https://puddleofcode.com/story/elixir-ruby-don-t-fight-benchmark/
+    elixir-ruby-dont-fight-talk-with: https://puddleofcode.com/story/elixir-ruby-don-t-fight-talk-with/
+    elixir-ruby-dont-fight-talk: https://puddleofcode.com/story/elixir-ruby-don-t-fight-talk-with-export-erlport/
     ember-cli-with-coffee-and-emblem: https://puddleofcode.com/story/ember-cli-with-coffee-and-emblem/
     filemodify: https://puddleofcode.com/story/filemodify/
     fishy-prompt-widgets: https://puddleofcode.com/story/fishy-prompt-widgets/
