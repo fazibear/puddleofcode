@@ -14,8 +14,8 @@
       {{ range (where .Site.RegularPages "Section" "story") }}
       '{{ .Slug }}': '{{ .Permalink }}',
       {{ end }}
-      {{ range $key, $value := .Site.Params.redirects }}  
-      '{{ $key }}': '{{ $value }}',
+      {{ range .Site.Data.redirects }}  
+      '{{ .key }}': '{{ .to }}',
       {{ end }}
     };
     function redirectTo() {
