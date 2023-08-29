@@ -10,7 +10,7 @@ tags:
   - beanstalk
 medium_link: https://medium.com/@fazibear/74e1bce100c6
 
-image: /assets/images/stories/beanstalk.png
+image: /images/stories/beanstalk.png
 ---
 
 Lately I was playing with AWS. I'm just wondering how can I easily deploy Elixir application with Elastic Beanstalk.

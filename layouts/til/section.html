@@ -1,0 +1,12 @@
+{{ define "main" }}
+<main>
+  <h2 class="m-5 text-center text-body-secondary">Today I Learned</h2>
+  {{ partial "pagination" . }}
+  <section>
+    {{ range .Paginator.Pages }}
+    {{ partial "til" . }}
+    {{ end }}
+  </section>
+  {{ partial "pagination" . }}
+</main>
+{{ end }}

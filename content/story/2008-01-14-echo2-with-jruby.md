@@ -6,7 +6,7 @@ tags:
   - java
   - jruby
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 I want to play with jruby, and I rewrite a numberguess example application from [Echo2](http://echo.nextapp.com/site/echo2) framework into Ruby using JRuby.

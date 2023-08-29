@@ -6,7 +6,7 @@ tags:
   - codepress
   - rails
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 I was playing around with CodePress. There are some modification I made:

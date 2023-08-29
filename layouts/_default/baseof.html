@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+  <meta content="{{ .Params.Description }}" name="description" />
+  <meta content="{{ .Params.Author }}" name="author" />
+
+  {{ partial "title.html" . }}
+
+  <link href="{{ .Permalink }}" rel="canonical" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans%7CFira+Mono" media="all" rel="stylesheet" />
+  <link href="/images/favicon.png" rel="icon" />
+
+  <link href="/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/css/variables.css" rel="stylesheet" />
+  <link href="/css/highlight.css" rel="stylesheet" />
+</head>
+
+<body class="bg-black" data-bs-theme="dark">
+  <div class="container">
+    {{ partial "navbar.html" . }}
+    {{ block "main" . }}
+    {{ end }}
+    {{ partial "footer.html" . }}
+  </div>
+  {{ partial "ga.html" . }}
+  <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -3,7 +3,7 @@ section: project
 date: 2007-04-15
 title: gruby
 slug: gruby
-image: /assets/images/projects/rubygem.png
+image: /images/projects/rubygem.png
 ---
 
 Gadu-Gadu (polish communicator) protocol implementation in Ruby language.

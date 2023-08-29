@@ -1,0 +1,57 @@
+{{ define "main" }}
+{{ .Content }}
+<header class="text-center text-body-secondary m-5">
+  <h2>
+    {{ .Site.Params.Subtitle }}
+  </h2>
+  <h5>
+    with {{ .Site.Params.Author }}
+  </h5>
+</header>
+<main>
+  <section>
+    <h4 class="hstack border-bottom p-2 border-dark">
+      <span>
+        Top Stories
+      </span><a class="ms-auto text-body-secondary fs-5" href="/stories">
+        More Stories »
+      </a>
+    </h4>
+    <div class="row row-cols-1 row-cols-lg-3 g-3 m-4">
+      {{ range first 9 (where .Site.RegularPages "Section" "story") }}
+      {{ partial "story" . }}
+      {{ end }}
+    </div>
+  </section>
+  <section>
+    <h4 class="hstack border-bottom p-2 border-dark">
+      <span>
+        Featured Projects
+      </span><a class="ms-auto text-body-secondary fs-5" href="/projects">
+        More Projects »
+      </a>
+    </h4>
+    <div class="row row-cols-1 row-cols-lg-2 g-3 m-4">
+      {{ range sort (where (where .Site.RegularPages "Section" "project") "Params.featured" ">" 0) "Params.featured"
+      "asc" }}
+      {{ partial "project" . }}
+      {{ end }}
+    </div>
+  </section>
+  <section>
+    <h4 class="hstack border-bottom p-2 border-dark rounded">
+      <span>
+        Last Learned:
+      </span>
+      <a class=" ms-auto text-body-secondary fs-5" href="/tils">
+        More »
+      </a>
+    </h4>
+    <div class="row border border-dark rounded m-4 p-4">
+      {{ range first 1 (where .Site.RegularPages "Section" "til") }}
+      {{ partial "til" . }}
+      {{ end }}
+    </div>
+  </section>
+</main>
+{{ end }}

@@ -4,7 +4,7 @@ title: Netvibes Modules Are Unavaiable
 tags:
   - netvibes
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 Sorry, all my netvibes modules are temporarily unavailable because traffic limits per month:

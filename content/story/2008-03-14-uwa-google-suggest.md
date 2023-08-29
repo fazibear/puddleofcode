@@ -6,7 +6,7 @@ tags:
   - netvibes
   - uwa
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 Google Suggest is now UWA style widget. Check [this](http://eco.netvibes.com/widgets/110/google-suggest) out.

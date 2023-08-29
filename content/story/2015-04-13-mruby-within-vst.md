@@ -6,7 +6,7 @@ tags:
   - mruby
   - vst
 
-image: /assets/images/stories/mruby.png
+image: /images/stories/mruby.png
 ---
 
 From time to time, I want to just do something more than a Rails app. Recently I just looked at MRuby.

@@ -1,9 +1,0 @@
-= render '/partials/base.*' do
-  main
-    h2.m-5.text-center.text-body-secondary Today I Learned
-    == render '/partials/pagination.*', pages: @item[:pages]
-    section
-      - @item[:items].each do |til|
-        .row.border.border-dark.rounded.m-4.p-4
-          == render '/partials/til.*', til: @items[til]
-    == render '/partials/pagination.*', pages: @item[:pages]

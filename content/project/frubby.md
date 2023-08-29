@@ -3,7 +3,7 @@ section: project
 date: 2015-01-07
 title: frubby
 slug: frubby
-image: /assets/images/projects/rubygem.png
+image: /images/projects/rubygem.png
 ---
 
 Bring fuzzy_match directly into ruby. Now typos makes no difference.

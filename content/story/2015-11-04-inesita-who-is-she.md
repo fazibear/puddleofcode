@@ -7,7 +7,7 @@ tags:
   - frontend
   - inesita
 
-image: /assets/images/stories/inesita.png
+image: /images/stories/inesita.png
 ---
 
 Who am I ? I am a simple, light, Ruby front-end framework. Yes, Ruby, it's all about Ruby, and its ecosystem.

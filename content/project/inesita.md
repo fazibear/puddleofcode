@@ -1,7 +1,7 @@
 ---
 date: 2015-06-21
 title: Inesita
-image: /assets/images/projects/inesita.png
+image: /images/projects/inesita.png
 featured: 2
 ---
 

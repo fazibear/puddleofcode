@@ -7,7 +7,7 @@ tags:
   - emscripten
   - asm.js
 
-image: /assets/images/stories/rustemscripten.png
+image: /images/stories/rustemscripten.png
 ---
 
 So, you want to write a game? And run it in the browser? Do you like Rust? Great! I’ll show you how to write a sample program in Rust using SDL2 and how to compile it with Emscripten.

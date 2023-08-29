@@ -3,7 +3,7 @@ date: 2014-11-25
 title: 5 years later ...
 tags:
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 Welcome BACK!

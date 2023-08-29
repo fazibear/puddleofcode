@@ -5,7 +5,7 @@ tags:
   - ruby
   - gem
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 My first version of Gadu-Gadu protocol implementation in Ruby released.

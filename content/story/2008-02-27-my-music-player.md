@@ -6,7 +6,7 @@ tags:
   - appjet
   - music
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 Another application written in javasctipt, using [AppJet](http://appjet.com/) solution. This one is simple application for browsing myspace music profiles and listen music. Big different is that you don't need to wait for whole ugly myspace page. Type band name, click search and press play on player :) Easy ? Take a look under player, there are similar artists. This might be helpful.

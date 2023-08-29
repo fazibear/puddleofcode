@@ -3,7 +3,7 @@ section: project
 date: 2016-03-25
 title: export
 slug: export
-image: /assets/images/projects/elixirpackage.png
+image: /images/projects/elixirpackage.png
 ---
 
 [Erlport](http://erlport.org/) wrapper for Elixir.

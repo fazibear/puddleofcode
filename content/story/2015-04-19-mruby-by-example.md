@@ -5,7 +5,7 @@ tags:
   - mruby
   - documentation
 
-image: /assets/images/stories/mruby.png
+image: /images/stories/mruby.png
 ---
 
 In mean time I was playing with MRuby. Embeded it into a VST and describe in my last [post](/story/mruby-within-vst).

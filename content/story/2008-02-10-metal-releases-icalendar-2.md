@@ -6,7 +6,7 @@ tags:
   - appjet
   - music
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 Here is new version of icalendar feed. This version is written in javascript.

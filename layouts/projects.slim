@@ -1,9 +1,0 @@
-= render '/partials/base.*' do
-  main
-    h2.m-5.text-center.text-body-secondary Projects
-    == render '/partials/pagination.*', pages: @item[:pages]
-    section
-      div.row.row-cols-1.row-cols-lg-2.g-3.m-4
-        - @item[:items].each do |project|
-          == render '/partials/project.*', project: @items[project]
-    == render '/partials/pagination.*', pages: @item[:pages]

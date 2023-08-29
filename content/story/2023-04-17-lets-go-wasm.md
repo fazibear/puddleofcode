@@ -4,7 +4,7 @@ title: Let's GO WASM
 tags:
   - go
   - wasm
-image: /assets/images/stories/go-wasm.png
+image: /images/stories/go-wasm.png
 ---
 
 WASM? WebAssembly?

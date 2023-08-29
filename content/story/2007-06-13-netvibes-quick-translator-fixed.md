@@ -4,7 +4,7 @@ title: Netvibes Quick Translator Fixed
 tags:
   - netvibes
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 Quick Translator widget fixed. Now just works ;)

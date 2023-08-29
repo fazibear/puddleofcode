@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+  <meta content="{{ .Params.Description }}" name="description" />
+  <meta content="{{ .Params.Author}}" name="author" />
+
+  <title>redirect!</title>
+
+  <script>
+    var redirects = {
+      {{ range .Site.RegularPages }}
+      '{{ .Slug }}': '{{ .Permalink }}',
+      {{ end }}
+      'blog': '/stories/',
+      'redirect': '/',
+    };
+    function redirectTo() {
+      if (window.location.href.includes('/redirect')) {
+        for (const url in redirects) {
+          if (window.location.href.includes(url)) {
+            return redirects[url]
+          };
+        };
+      } else {
+        return '/';
+      };
+    };
+    window.location.replace(redirectTo());
+  </script>
+</head>
+
+<body>
+Redirect!
+</body>
+
+</html>

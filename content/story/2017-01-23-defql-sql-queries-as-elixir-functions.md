@@ -8,7 +8,7 @@ tags:
   - orm
   - database
 
-image: /assets/images/stories/defql.png
+image: /images/stories/defql.png
 ---
 
 Elixir world is functional. There are no objects or instances at all. In this case, I asked myself a question.

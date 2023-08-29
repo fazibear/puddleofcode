@@ -1,7 +1,7 @@
 ---
 date: 2017-12-08
 title: fazic
-image: /assets/images/projects/fazic.png
+image: /images/projects/fazic.png
 featured: 3
 ---
 

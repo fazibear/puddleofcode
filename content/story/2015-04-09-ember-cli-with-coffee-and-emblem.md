@@ -8,7 +8,7 @@ tags:
 crosspost_to_medium: true
 medium_link: https://medium.com/@fazibear/c253bfd67fdf
 
-image: /assets/images/stories/embercli.png
+image: /images/stories/embercli.png
 ---
 
 In mean time, I want to try ember.js app. Just an ember.js app without any backend. I really don't like plain javascript. CoffeeScript it my choice, and of course emblem, slim like beautiful template engine. Get it on.

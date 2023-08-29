@@ -1,0 +1,43 @@
+{{ define "main" }}
+
+<div class="container">
+  {{ if not (isset .Params "noheader") }}
+  <div class="row mt-5">
+    <div class="d-none d-md-block col-md-2 align-middle text-center">
+      <a href="/about">
+        <img alt="{{ .Site.Params.AuthorNick }}" class="rounded-circle" height="80px"
+          src="{{ .Site.Params.author_image }}" />
+      </a>
+    </div>
+    <div class="col-md-10">
+      <h5>
+        <a href="/about">
+          {{ .Site.Params.author }}
+        </a>
+      </h5>
+      <h1>
+        {{ .Title }}
+      </h1>
+      <p class="text-secondary">
+        <span>
+          {{ .Date.Format "2 January 2006" }}
+        </span>
+        {{ if or (gt .ReadingTime 1) }}
+        - Reading time: {{ .ReadingTime }} minutes
+        {{ end }}
+      </p>
+    </div>
+  </div>
+  {{ end }}
+  {{ if or (isset .Params "image") }}
+  <div class="d-none d-md-block col text-center align-middle mb-5">
+    <img alt="{{ .Title }}" src="{{ .Params.image }}" style="width: 50%" />
+  </div>
+  {{ end }}
+  <div class="row">
+    {{ .Content }}
+    {{ partial "gisqus.html" . }}
+  </div>
+</div>
+
+{{ end }}

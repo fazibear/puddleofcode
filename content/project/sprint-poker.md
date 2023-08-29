@@ -3,7 +3,7 @@ section: project
 date: 2015-06-30
 title: Sprint Poker
 slug: sprint-poker
-image: /assets/images/projects/sprintpoker.png
+image: /images/projects/sprintpoker.png
 tags:
   - elixir
   - phoenix

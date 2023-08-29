@@ -1,7 +1,0 @@
-- if pages.count > 1
-  nav
-    ul.pagination.pagination-sm.justify-content-center
-      - pages.each do |number, href|
-        li.page-item
-          a class="page-link" href="#{href}" tabindex="-1"
-            | #{number}

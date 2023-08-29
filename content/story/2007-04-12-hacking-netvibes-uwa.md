@@ -5,7 +5,7 @@ tags:
   - javascript
   - netvibes
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 >UWA is the new Netvibes API. Through it, your Netvibes widgets will be available on every widget platforms or blog systems: Netvibes of course, but also Google IG, Apple Dashboard and many more...

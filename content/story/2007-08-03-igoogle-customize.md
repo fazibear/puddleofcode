@@ -5,7 +5,7 @@ tags:
   - javascript
   - igoogle
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 I just made an iGoogle module. Now you can make some customization of your page.

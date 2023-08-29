@@ -5,7 +5,7 @@ tags:
   - ruby
   - gem
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 GRuby 0.2.1:

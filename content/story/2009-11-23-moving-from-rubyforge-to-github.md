@@ -3,7 +3,7 @@ date: 2009-11-23
 title: Moving from rubyforge to github
 tags:
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 Finally I moved my [rubyforge](http://rubyforge.org/) repositories to github and gems to [gemcutter.org](http://gemcutter.org/):

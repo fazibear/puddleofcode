@@ -5,7 +5,7 @@ tags:
   - git
   - symlink
   - dotfiles
-image: /assets/images/stories/symlink.jpg
+image: /images/stories/symlink.jpg
 ---
 
 Long story short. Tried lot of dotfiles managers including custom solutions. All of them have a big disadvantage. You have a copy of a file or symlink.

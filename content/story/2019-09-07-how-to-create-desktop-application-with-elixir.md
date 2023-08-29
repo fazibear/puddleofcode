@@ -7,7 +7,7 @@ tags:
   - live view
   - chromium
   - electron
-image: /assets/images/stories/desktop-app.jpg
+image: /images/stories/desktop-app.jpg
 ---
 
 Writing desktop application is not an easy task. But why don't use Elixir, Phoenix and LiveView?

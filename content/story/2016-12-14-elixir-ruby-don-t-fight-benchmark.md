@@ -7,7 +7,7 @@ tags:
   - ruby
   - erlix
 
-image: /assets/images/stories/benchmark.png
+image: /images/stories/benchmark.png
 ---
 
 Now we know how to talk to Ruby from Elixir. We’ve been described 3 methods so far. Now it’s time for comparisons and benchmarks. If you want to benchmark it yourself you can use the application in this [repository](https://github.com/fazibear/exrbbench). Let’s start!
@@ -76,14 +76,14 @@ erlectricity_function       18.49 K
 export_function             15.28 K - 1.21x slower
 ```
 
-![benchmarks](/assets/images/content/benchmarks1.png)
-![benchmarks](/assets/images/content/benchmarks2.png)
+![benchmarks](/images/content/benchmarks1.png)
+![benchmarks](/images/content/benchmarks2.png)
 Now we see that `export` is 1.21 times slower that `erlectricity`. Why ?
 Erlectricity is written as a C extension for ruby, so there is no surprise.
 
-![benchmarks](/assets/images/content/benchmarks3.png)
-![benchmarks](/assets/images/content/benchmarks4.png)
-![benchmarks](/assets/images/content/benchmarks5.png)
-![benchmarks](/assets/images/content/benchmarks6.png)
+![benchmarks](/images/content/benchmarks3.png)
+![benchmarks](/images/content/benchmarks4.png)
+![benchmarks](/images/content/benchmarks5.png)
+![benchmarks](/images/content/benchmarks6.png)
 
 More detailed charts are pretty similar .To sum it up, you have to decide what will fit your needs.

@@ -3,7 +3,7 @@ section: project
 date: 2015-11-15
 title: opal-phoenix
 slug: opal-phoenix
-image: /assets/images/projects/opalgem.png
+image: /images/projects/opalgem.png
 ---
 Opal wrapper for [Phoenix Framework](http://phoenixframework.org/) javascript library.
 

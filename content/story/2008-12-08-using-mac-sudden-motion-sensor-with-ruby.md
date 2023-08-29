@@ -8,7 +8,7 @@ tags:
   - c
 
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 Quick and dirt script for reading your macbooks sudden motion sensor:
 

@@ -8,7 +8,7 @@ tags:
   - github
   - travis
 
-image: /assets/images/stories/code.png
+image: /images/stories/code.png
 ---
 
 While I was working on the Elixir, I realized that it would be nice to have some static code analysis tool integrate with you build process. In Elixir world we have a [credo](https://github.com/rrrene/credo). It’s a very nice tool we can add to our mix.exs file and analyze our project simply typing:
@@ -19,7 +19,7 @@ $ mix credo
 
 And get something like this:
 
-![credo](/assets/images/content/credo.png)
+![credo](/images/content/credo.png)
 
 Beautiful isn’t it ?
 
@@ -59,7 +59,7 @@ We need to generate GITHUB_ACCESS_TOKEN. Just go to your user Settings page and 
 
 After project builds, we get comments within a pull request.
 
-![credo](/assets/images/content/credopr.png)
+![credo](/images/content/credopr.png)
 
 One more thing… You can add rvm to cache to speed up things. Just add this lines to you .travis.yml
 

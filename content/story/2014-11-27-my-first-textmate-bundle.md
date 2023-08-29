@@ -6,7 +6,7 @@ tags:
   - ruby
   - tmbundle
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 When I saw, that [Textmate 2](https://github.com/textmate/textmate) supports gutter informations, I want to use it somehow.

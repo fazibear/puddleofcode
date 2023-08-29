@@ -5,7 +5,7 @@ tags:
   - gedit
   - python
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 [GEdit](http://www.gnome.org/projects/gedit/) is nice developer editor for [GNOME](http://www.gnome.org/). [Textmate](http://macromates.com/) like snippets, file browser and embedded terminal. Last one is a nice feature, but default plugin gives you only one terminal. But wait, plugins are written in python. This is my third attempt to modify python code... It was not so bad, after few `print()`, `dir()`, and `id()` I can add and remove terminal windows within gedit :)

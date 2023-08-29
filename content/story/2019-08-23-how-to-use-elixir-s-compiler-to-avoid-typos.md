@@ -7,7 +7,7 @@ tags:
   - contracts
   - typos
 
-image: /assets/images/stories/typo.jpg
+image: /images/stories/typo.jpg
 ---
 
 In this article, I want to describe how you can use elixir metaprogramming to avoid some runtime errors caused by typos. If you're passing around some handcrafted messages ex. `%{name: "app_one_hello", payload: "payload"}` you can easily introduce errors. Sending `app_one_hello` and listening for `app_ane_hello` will not make your system works correctly. Imagine you have thousands of messages. It's really hard to manage them like that. To make things better, you can create a list of all messages and generate functions to send and receive them. Now when you will create a typo, elixir's compiler will tell you!

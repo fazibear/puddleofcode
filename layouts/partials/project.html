@@ -1,0 +1,29 @@
+<div class="col">
+  <div class="card mb-3 h-100 bg-black">
+    <div class="row g-0 h-100">
+      <div class="col-md-4 text-center overflow-hidden">
+        <a href="{{ .Permalink }}">
+          <img alt="{{ .Title }}" class="rounded-start object-fit-cover h-100" src="{{ .Params.Image }}"
+            width="200px" />
+        </a>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h3 class="card-title">
+            <a href="{{ .Permalink }}">
+              {{ .Title }}
+            </a>
+          </h3>
+          <p class="card-text">
+            <small class="text-muted">
+              {{ .Date.Format "2006-01-02" }}
+            </small>
+          </p>
+          <p class="card-text">
+            {{ .Summary }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

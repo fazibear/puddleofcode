@@ -5,7 +5,7 @@ tags:
   - ruby
   - gem
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 I wrote a simple ruby string class extension to displays console colors easier using ANSI escape sequences.

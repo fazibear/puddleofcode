@@ -3,7 +3,7 @@ section: project
 date: 2016-04-01
 title: inesid
 slug: inesid
-image: /assets/images/projects/inesid.png
+image: /images/projects/inesid.png
 ---
 
 Open source Retro Web SID Player

@@ -1,7 +1,7 @@
 ---
 date: 2017-01-21
 title: Defql
-image: /assets/images/projects/elixirpackage.png
+image: /images/projects/elixirpackage.png
 featured: 4
 ---
 

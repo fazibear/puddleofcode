@@ -7,7 +7,7 @@ tags:
   - daw
   - vst
 
-image: /assets/images/stories/vst.png
+image: /images/stories/vst.png
 ---
 
 When I first read about [MRuby](https://mruby.org/), I just want to play with it. The first thing that came to my mind was a [VST](https://en.wikipedia.org/wiki/Virtual_Studio_Technology) plugin. I could build a little wrapper, and pass all function to ruby interpreter. I’ll describe how I’ve done this.
@@ -141,7 +141,7 @@ We are ready to launch DAW. If you don’t know how to use VST plugin here is a 
 
 This is how VST look like in Ableton Live (in other DAW will look different)
 
-![mrubyvst](/assets/images/content/vst.png)
+![mrubyvst](/images/content/vst.png)
 
 Great! The plugin works, now we will look at implementation details.
 

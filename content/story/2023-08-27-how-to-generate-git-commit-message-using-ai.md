@@ -5,7 +5,7 @@ tags:
   - git
   - ai
   - python
-image: /assets/images/stories/aigit.jpg
+image: /images/stories/aigit.jpg
 ---
 
 Why don't use available solution? All of them using ChatGPT. But I'm out of credits ;)

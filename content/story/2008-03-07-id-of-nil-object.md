@@ -4,7 +4,7 @@ title: Id of nil object
 tags:
   - ruby
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 ```ruby

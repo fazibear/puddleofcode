@@ -6,7 +6,7 @@ tags:
   - netvibes
   - uwa
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 Quick translator is now available on UWA platform.

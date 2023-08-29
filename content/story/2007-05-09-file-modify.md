@@ -5,7 +5,7 @@ tags:
   - ruby
   - tips
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 Here is a little ruby File class method called modify!.

@@ -5,7 +5,7 @@ tags:
   - ruby
   - tips
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 I was trying to find a way for generating dynamic methods.

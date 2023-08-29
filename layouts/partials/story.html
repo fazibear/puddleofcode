@@ -1,0 +1,27 @@
+<div class="col">
+  <div class="card h-100 bg-black">
+    <a href="{{ .Permalink }}">
+      <img alt="{{ .Title }}" class="card-img-top object-fit-cover" height="200px" src="{{ .Params.Image }}" />
+    </a>
+    <div class="card-body">
+      <h4 class="card-title">
+        <a href="{{ .Permalink }}">
+          {{ .Title }}
+        </a>
+      </h4>
+      <div class="card-text">
+        {{ .Summary }}
+      </div>
+    </div>
+    <div class="card-footer hstack">
+      <span>
+        {{ .Date.Format "2 January 2006" }}
+      </span>
+      <span class="ms-auto">
+        {{ if or (gt .ReadingTime 1) }}
+        Reading time: {{ .ReadingTime }} minutes
+        {{ end }}
+      </span>
+    </div>
+  </div>
+</div>

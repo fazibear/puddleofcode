@@ -1,0 +1,14 @@
+{{ define "main" }}
+<main>
+  <h2 class="m-5 text-center text-body-secondary">Projects</h2>
+  {{ partial "pagination" . }}
+  <section>
+    <div class="row row-cols-1 row-cols-lg-2 g-3 m-4">
+      {{ range .Paginator.Pages }}
+      {{ partial "project" . }}
+      {{ end }}
+    </div>
+  </section>
+  {{ partial "pagination" . }}
+</main>
+{{ end }}

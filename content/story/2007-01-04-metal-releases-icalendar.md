@@ -5,7 +5,7 @@ tags:
   - ruby
   - music
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 This simple ruby script parse [http://www.metalstorm.ee/](http://www.metalstorm.ee/) and create ical file with new and upcoming releases.

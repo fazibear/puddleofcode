@@ -7,7 +7,7 @@ tags:
   - frontend
   - inesita
 
-image: /assets/images/stories/inesita.png
+image: /images/stories/inesita.png
 ---
 
 This is another quick post about [Inesita](http://inesita-rb.github.io/). Lot of people asked me about differences to other framework [Clearwater](https://github.com/clearwater-rb/clearwater).

@@ -4,7 +4,7 @@ title: Javascript Class Builder
 tags:
   - javascript
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 Simple (yet) function that make pseudo class creation simple.

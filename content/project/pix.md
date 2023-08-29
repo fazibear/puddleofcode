@@ -3,7 +3,7 @@ section: project
 date: 2017-11-11
 title: pix
 slug: pix
-image: /assets/images/projects/pix.png
+image: /images/projects/pix.png
 ---
 
 Pixel frame like project, but with Raspberry Pi inside.

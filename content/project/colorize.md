@@ -1,7 +1,7 @@
 ---
 date: 2007-04-22
 title: colorize
-image: /assets/images/projects/rubygem.png
+image: /images/projects/rubygem.png
 featured: 1
 ---
 

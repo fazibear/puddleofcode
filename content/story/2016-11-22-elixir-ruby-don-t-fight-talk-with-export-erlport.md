@@ -7,7 +7,7 @@ tags:
   - ruby
   - export
 
-image: /assets/images/stories/export.png
+image: /images/stories/export.png
 ---
 
 There are still a lot of things in Ruby world, that don’t exist in Elixir yet. To resolve that problem. I’ve done a research. Tried to figure it out if both worlds can talk to each other. And the answer is yes. They can. I’ll try to describe few ways how to do it.

@@ -5,7 +5,7 @@ tags:
   - ruby
   - merb
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 If you get this ...

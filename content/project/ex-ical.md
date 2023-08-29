@@ -3,7 +3,7 @@ section: project
 date: 2016-03-17
 title: ex_ical
 slug: ex-ical
-image: /assets/images/projects/elixirpackage.png
+image: /images/projects/elixirpackage.png
 ---
 
 iCalendar parser for Elixir.

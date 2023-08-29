@@ -4,7 +4,7 @@ title: Ivo Reader Script
 tags:
   - ruby
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 This is a ruby rewrite of ivonka.sh script. This simple script read data from standard input or command line parameters using [say.expressivo.com](http://say.expressivo.com/) text to speech reader.

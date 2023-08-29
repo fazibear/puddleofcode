@@ -8,7 +8,7 @@ tags:
   - drives
   - kernel
 
-image: /assets/images/stories/nervesbuildroot.png
+image: /images/stories/nervesbuildroot.png
 ---
 
 For about a year I’m working on some interesting machine. The first challenge was to build a kiosk device. During working on that I’ve made a lot of research and ended up with Nerves.

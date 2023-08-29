@@ -7,7 +7,7 @@ tags:
   - crystal
   - bindings
 
-image: /assets/images/stories/tensorflowcr.png
+image: /images/stories/tensorflowcr.png
 ---
 
 #### Crystal bindings for Tensorflow

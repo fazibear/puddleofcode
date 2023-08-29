@@ -5,7 +5,7 @@ tags:
   - javascript
   - netvibes
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 Finally, i find a simple and clean way to extend UWA API. Now you can get document, window and even app object from your widget.

@@ -5,7 +5,7 @@ tags:
   - ruby
   - rails
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 Yes, I know!

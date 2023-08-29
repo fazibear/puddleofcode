@@ -6,7 +6,7 @@ tags:
   - xslt
   - xml
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 Simple and easy wrapper for transformation XML document with XSL on client side. Supports: Firefox, Opera and IE.

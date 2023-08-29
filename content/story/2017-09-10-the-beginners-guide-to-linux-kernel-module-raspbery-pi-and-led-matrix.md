@@ -8,7 +8,7 @@ tags:
   - raspberrypi
   - led
 
-image: /assets/images/stories/leds.png
+image: /images/stories/leds.png
 ---
 
 When I found an old broken bluetooth speaker with RGB LED matrix, I decided to make use of it. It will be the great challenge to connect LEDs to Raspberry and display some fancy information.

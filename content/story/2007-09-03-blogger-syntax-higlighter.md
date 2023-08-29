@@ -5,7 +5,7 @@ tags:
   - javascript
   - blogger
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 My syntax highligter widget for blogger is available. It's based on [SyntaxHighlighter](http://code.google.com/p/syntaxhighlighter/) 1.5.1.

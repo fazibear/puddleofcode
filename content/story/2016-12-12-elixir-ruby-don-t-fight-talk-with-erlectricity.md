@@ -7,7 +7,7 @@ tags:
   - ruby
   - erlectricity
 
-image: /assets/images/stories/erlectricity.png
+image: /images/stories/erlectricity.png
 ---
 
 The third method that allows us to communicate Ruby and Elixir is Erlectricity. It’s only a Ruby gem that you have to open an Erlang Port yourself, also you have to take care of data conversion (on Elixir side). Erlport using same trick underneath. Regardless I want do describe how to connect to Ruby with Erlectricity. Let’s do it!

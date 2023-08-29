@@ -6,7 +6,7 @@ tags:
   - netvibes
   - uwa
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 Netvibes Customize widget is now available in UWA api. It works only in Netvibes environment, using it in any other just makes no sense ;)

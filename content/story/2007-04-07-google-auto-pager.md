@@ -5,7 +5,7 @@ tags:
   - javascript
   - greasemonkey
 
-image: /assets/images/stories/archived.jpg
+image: /images/stories/archived.jpg
 ---
 
 Greasemonkey script. Modified version of Google Auto Pager. For details see source file. It add search result from next pages while browsing.

@@ -9,7 +9,7 @@ tags:
 crosspost_to_medium: true
 medium_link: https://medium.com/@fazibear/3c17e0958694
 
-image: /assets/images/stories/opal.png
+image: /images/stories/opal.png
 ---
 
 Let's try [Opal](http://opalrb.org). I don't want to setup a Rails application. Just static html with javascript written in Opal, stylesheets in SASS, and HTML in Slim. Also we want to use JQuery like methods to select DOM elements.

@@ -5,7 +5,7 @@ tags:
   - rust
   - wasm
   - async
-image: /assets/images/stories/rusty-wasm.png
+image: /images/stories/rusty-wasm.png
 ---
 
 We will take a look at WASM again! But this time with Rust. Why Rust? Because I can compile Rust directly into WASM.

@@ -3,7 +3,7 @@ section: project
 date: 2015-09-03
 title: airbrakex
 slug: airbrakex
-image: /assets/images/projects/elixirpackage.png
+image: /images/projects/elixirpackage.png
 ---
 
 Elixir client for the [Airbrake](https://airbrake.io/) service!
