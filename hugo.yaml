@@ -73,8 +73,6 @@ Params:
     uwa-netvibes-customize: https://puddleofcode.com/story/uwa-netvibes-customize/
     uwa-quick-translator: https://puddleofcode.com/story/wa-quick-translator/
     whats-wrong-with-merb: https://puddleofcode.com/story/whats-wrong-with-merb/
-    /blog/: https://puddleofcode.com/stories/
-    /redirect/: https://puddleofcode.com
 
 markup:
   highlight:
