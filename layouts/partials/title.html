@@ -7,5 +7,9 @@
   - TIL
   {{ end }}
   {{ end }}
+  {{ if .IsHome }}
+  - {{ .Site.Params.Description }}
+  {{ else }}
   - {{ .Title }}
+  {{ end }}
 </title>
