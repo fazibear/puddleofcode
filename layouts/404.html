@@ -14,8 +14,9 @@
       {{ range (where .Site.RegularPages "Section" "story") }}
       '{{ .Slug }}': '{{ .Permalink }}',
       {{ end }}
-      'blog': '/stories/',
-      'redirect': '/',
+      {{ range $key, $value := .Site.Params.redirects }}  
+      '{{ $key }}': '{{ $value }}',
+      {{ end }}
     };
     function redirectTo() {
       if (window.location.href.includes('/redirect')) {
