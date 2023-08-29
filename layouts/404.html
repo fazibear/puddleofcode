@@ -11,7 +11,7 @@
 
   <script>
     var redirects = {
-      {{ range .Site.RegularPages }}
+      {{ range (where .Site.RegularPages "Section" "story") }}
       '{{ .Slug }}': '{{ .Permalink }}',
       {{ end }}
       'blog': '/stories/',
@@ -28,7 +28,7 @@
         return '/';
       };
     };
-    window.location.replace(redirectTo());
+    //window.location.replace(redirectTo());
   </script>
 </head>
 
