@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <div class="container">
-  {{ if not (isset .Params "noheader") }}
+  {{ if not (isset .Params "single") }}
   <div class="row mt-5">
     <div class="d-none d-md-block col-md-2 align-middle text-center">
       <a href="/about">
@@ -36,8 +36,10 @@
   {{ end }}
   <div class="row">
     {{ .Content }}
-    {{ partial "gisqus.html" . }}
   </div>
+  {{ if not (isset .Params "single") }}
+  {{ partial "gisqus.html" . }}
+  {{ end }}
 </div>
 
 {{ end }}
