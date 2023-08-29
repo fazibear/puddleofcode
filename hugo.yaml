@@ -3,14 +3,21 @@ baseurl: https://puddleofcode.com/
 languageCode: 'en-us'
 paginate: 12
 summaryLength: 20
+googleAnalytics: G-FXW2J6R5HC
 
-Params:
-  title: Puddle Of Code
-  author: Michał Kalbarczyk
-  subtitle: Programming Adventures
-  author_nick: fazibear
-  author_image: /images/authors/fazibear.png
-  description: Programming Adventures with Michał Kalbarczyk
+taxonomies:
+  tag: tags
+
+permalinks:
+  section:
+    story: 'stories'
+    project: 'projects'
+    til: 'tils'
+
+frontmatter:
+  date: 
+    - :filename
+    - :default
 
 markup:
   highlight:
@@ -26,13 +33,10 @@ markup:
     style: onedark
     tabWidth: 4
 
-permalinks:
-  section:
-    story: 'stories'
-    project: 'projects'
-    til: 'tils'
-
-frontmatter:
-  date: 
-    - :filename
-    - :default
+Params:
+  title: Puddle Of Code
+  author: Michał Kalbarczyk
+  subtitle: Programming Adventures
+  author_nick: fazibear
+  author_image: /images/authors/fazibear.png
+  description: Programming Adventures with Michał Kalbarczyk

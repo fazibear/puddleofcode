@@ -26,7 +26,7 @@
     {{ end }}
     {{ partial "footer.html" . }}
   </div>
-  {{ partial "ga.html" . }}
+  {{ template "_internal/google_analytics.html" . }}
   <script src="/js/bootstrap.min.js"></script>
 </body>
 
