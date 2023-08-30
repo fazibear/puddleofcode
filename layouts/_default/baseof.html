@@ -17,6 +17,8 @@
   <link href="/css/bootstrap.min.css" rel="stylesheet" />
   <link href="/css/variables.css" rel="stylesheet" />
   <link href="/css/highlight.css" rel="stylesheet" />
+
+  {{ template "_internal/google_analytics.html" . }}
 </head>
 
 <body class="bg-black" data-bs-theme="dark">
@@ -26,7 +28,6 @@
     {{ end }}
     {{ partial "footer.html" . }}
   </div>
-  {{ template "_internal/google_analytics.html" . }}
   <script src="/js/bootstrap.min.js"></script>
 </body>
 
