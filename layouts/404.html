@@ -13,7 +13,7 @@
 
   <script>
     var redirects = {
-      {{ range .Site.Data.redirects }}  
+      {{ range .Site.Data.redirects }}
       '{{ .key }}': '{{ .to }}',
       {{ end }}
       {{ range (where .Site.RegularPages "Section" "story") }}
