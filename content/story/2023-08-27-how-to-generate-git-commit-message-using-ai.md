@@ -52,7 +52,7 @@ We need model right?
 
 Let's look at [huggingface](https://huggingface.co/models)!
 
-There it is: https://huggingface.co/mamiksik/T5-commit-message-generation but there is no docs :(
+There it is: https://huggingface.co/mamiksik/T5-commit-message-generation but there are no documentation :(
 But if you'll look deeper you'll find https://huggingface.co/spaces/mamiksik/commit-message-generator
 
 We can use this https://huggingface.co/spaces/mamiksik/commit-message-generator/blob/main/app.py with a little modifications.
@@ -313,3 +313,12 @@ if __name__ == "__main__":
 ```
 It's fast on cpu, but loading model take a lot of times. Anyway 3s is OK.
 That's all. It works. At least for me.
+
+One more thing!. Just figure it out you can use api directly from command line shell (fish).
+
+```fish
+curl -s -X POST https://mamiksik-commit-message-generator.hf.space/run/predict
+  -H 'Content-Type: application/json'
+  -d '{ "data": ["(git diff)", 40, 5, 7, 1]}'
+  | jq ".data[2].label"
+```
