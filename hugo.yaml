@@ -6,9 +6,6 @@ summaryLength: 20
 enableRobotsTXT: true
 googleAnalytics: G-FXW2J6R5HC
 
-taxonomies:
-  tag: tags
-
 permalinks:
   section:
     story: 'stories'
