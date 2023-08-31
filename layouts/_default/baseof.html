@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
-  <meta content="{{ .Params.Description }}" name="description" />
-  <meta content="{{ .Params.Author }}" name="author" />
+  <meta content="{{ .Site.Params.Author }}" name="author" />
+  <meta content="{{ .Site.Params.Description }}" name="description" />
 
   {{ partial "title.html" . }}
 
