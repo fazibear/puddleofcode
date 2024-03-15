@@ -1,57 +1,66 @@
 {{ define "main" }}
 {{ .Content }}
 <header class="text-center text-body-secondary m-5">
-  <h2>
-    {{ .Site.Params.Subtitle }}
-  </h2>
-  <h5>
-    with {{ .Site.Params.Author }}
-  </h5>
+  <h1>
+    {{ .Site.Params.Subtitle }} with {{ .Site.Params.Author }}
+  </h1>
 </header>
 <main>
   <section>
-    <h4 class="hstack border-bottom p-2 border-dark">
-      <span>
-        Top Stories
-      </span><a class="ms-auto text-body-secondary fs-5" href="/stories">
+    <h2>Top Stories
+      <a href="/stories">
         More Stories »
       </a>
-    </h4>
-    <div class="row row-cols-1 row-cols-lg-3 g-3 m-4">
-      {{ range first 9 (where .Site.RegularPages "Section" "story") }}
-      {{ partial "story" . }}
-      {{ end }}
-    </div>
+    </h2>
+    {{ range first 3 (where .Site.RegularPages "Section" "story") }}
+    <h3>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      - {{ .Date.Format "2 January 2006" }}
+    </h3>
+    <p>
+      {{ .Summary }}
+      <br />
+      {{ if or (gt .ReadingTime 1) }}Reading time: {{ .ReadingTime }} minutes.{{ end }}
+    </p>
+    {{ end }}
+
   </section>
   <section>
-    <h4 class="hstack border-bottom p-2 border-dark">
-      <span>
-        Featured Projects
-      </span><a class="ms-auto text-body-secondary fs-5" href="/projects">
+    <h2>
+      Featured Projects
+      <a class="ms-auto text-body-secondary fs-5" href="/projects">
         More Projects »
       </a>
-    </h4>
-    <div class="row row-cols-1 row-cols-lg-2 g-3 m-4">
-      {{ range sort (where (where .Site.RegularPages "Section" "project") "Params.featured" ">" 0) "Params.featured"
-      "asc" }}
-      {{ partial "project" . }}
-      {{ end }}
-    </div>
+    </h2>
+    {{ range sort (where (where .Site.RegularPages "Section" "project") "Params.featured" ">" 0) "Params.featured"
+    "asc" }}
+    <h3>
+      <a href="{{ .Permalink }}">
+        {{ .Title }}
+      </a>
+    </h3>
+    <p>
+      {{ .Summary }}
+    </p>
+    {{ end }}
   </section>
   <section>
-    <h4 class="hstack border-bottom p-2 border-dark rounded">
-      <span>
-        Last Learned:
-      </span>
-      <a class=" ms-auto text-body-secondary fs-5" href="/tils">
+    <h2>
+      Last Learned:
+      <a href="/tils">
         More »
       </a>
-    </h4>
-    <div class="row m-4 p-4">
-      {{ range first 1 (where .Site.RegularPages "Section" "til") }}
-      {{ partial "til" . }}
-      {{ end }}
-    </div>
+    </h2>
+    {{ range first 1 (where .Site.RegularPages "Section" "til") }}
+    <h3>
+      <a href=" {{ .Permalink }}">
+        {{ .Title }}
+      </a>
+    </h3>
+    <p>
+      {{ .Content }}
+    </p>
+    {{ end }}
   </section>
 </main>
 {{ end }}

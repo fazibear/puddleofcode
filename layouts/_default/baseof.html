@@ -7,29 +7,28 @@
   <meta content="{{ .Site.Params.Author }}" name="author" />
   <meta content="{{ .Site.Params.Description }}" name="description" />
 
-  {{ partial "title.html" . }}
+  <title>
+    {{ partial "title.html" . }}
+  </title>
 
-  <link href="{{ .Permalink }}" rel="canonical" />
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans%7CFira+Mono" media="all" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <link href="window.css" rel="stylesheet" />
   <link href="/images/favicon.png" rel="icon" />
 
-  <link href="/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="/css/variables.css" rel="stylesheet" />
-  <link href="/css/highlight.css" rel="stylesheet" />
-  <link rel="me" href="https://hachyderm.io/@fazibear" />
+  <link href="https://hachyderm.io/@fazibear" rel="me" />
+  <link href="{{ .Permalink }}" rel="canonical" />
 
   {{ template "_internal/google_analytics.html" . }}
 </head>
 
-<body class="bg-black" data-bs-theme="dark">
-  <div class="container">
-    {{ partial "navbar.html" . }}
-    {{ block "main" . }}
-    {{ end }}
-    {{ partial "footer.html" . }}
+<body>
+  <div class="window">
+    {{ partial "window_handler.html" . }}
+    <div class="window_body">
+      {{ block "main" . }}{{ end }}
+    </div>
   </div>
-  <script src="/js/bootstrap.min.js"></script>
+  {{ partial "footer.html" . }}
 </body>
 
 </html>

@@ -1,15 +1,13 @@
-<title>
-  {{ .Site.Params.Title }}
-  {{ if ne .Kind "section" }}
-  {{ if eq .Section "project" }}
-  - Project
-  {{ else if eq .Section "til" }}
-  - TIL
-  {{ end }}
-  {{ end }}
-  {{ if .IsHome }}
-  - {{ .Site.Params.Description }}
-  {{ else }}
-  - {{ .Title }}
-  {{ end }}
-</title>
+{{ .Site.Params.Title }}
+{{ if ne .Kind "section" }}
+{{ if eq .Section "project" }}
+- Project
+{{ else if eq .Section "til" }}
+- TIL
+{{ end }}
+{{ end }}
+{{ if .IsHome }}
+- {{ .Site.Params.Description }}
+{{ else }}
+- {{ .Title }}
+{{ end }}
