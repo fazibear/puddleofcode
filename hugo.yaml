@@ -1,7 +1,7 @@
 baseurl: https://puddleofcode.com/
 languageCode: 'en-us'
 paginate: 12
-paginatePath:
+paginateUrl: '/'
 summaryLength: 20
 enableRobotsTXT: true
 googleAnalytics: G-FXW2J6R5HC
