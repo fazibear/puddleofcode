@@ -1,4 +1,3 @@
-
 baseurl: https://puddleofcode.com/
 languageCode: 'en-us'
 paginate: 12
@@ -6,6 +5,10 @@ paginatePath:
 summaryLength: 20
 enableRobotsTXT: true
 googleAnalytics: G-FXW2J6R5HC
+
+disableKinds:
+  - taxonomy
+  - term
 
 permalinks:
   section:
