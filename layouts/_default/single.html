@@ -2,7 +2,8 @@
 
 <div class="container">
   {{ if not (isset .Params "single") }}
-  <div class="row mt-5">
+  <div class="row m-5 p-5 pt-10 pb-3"
+    style="background-repeat: no-repeat; background-position: center; background-size: cover; background-image: linear-gradient(transparent -100%, black 75%), url({{ .Params.Image }})">
     <div class="d-none d-md-block col-md-2 align-middle text-center">
       <a href="/about">
         <img alt="{{ .Site.Params.AuthorNick }}" class="rounded-circle" height="80px"
@@ -27,11 +28,6 @@
         {{ end }}
       </p>
     </div>
-  </div>
-  {{ end }}
-  {{ if or (isset .Params "image") }}
-  <div class="d-none d-md-block col text-center align-middle mb-5">
-    <img alt="{{ .Title }}" src="{{ .Params.image }}" style="width: 50%" />
   </div>
   {{ end }}
   <div class="row">
