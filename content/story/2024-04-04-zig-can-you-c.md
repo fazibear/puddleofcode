@@ -14,9 +14,9 @@ Surely you'll say Rust! Yep done a lot of things in Rust. But maybe C?
 
 Ohhh... Noooo...
 Remember `Segmentation Fault`?
-How you gonna manage depenencies?
+How are you going to manage depenencies?
 
-OK OK, So try to use some of the C library in ZIG! How hard it will be? Lets see.
+OK, So try to use some C library in ZIG! How hard it will be? Let's see.
 
 Try to write somple app using `raylib`.
 
