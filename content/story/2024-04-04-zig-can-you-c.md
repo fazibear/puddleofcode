@@ -127,6 +127,7 @@ const ray = @cImport({
 
 pub fn main() !void {
     ray.InitWindow(800, 450, "Hey ZIG");
+    defer ray.CloseWindow();
 
     while (!ray.WindowShouldClose()) {
         ray.BeginDrawing();
