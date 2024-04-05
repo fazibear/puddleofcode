@@ -1,37 +1,37 @@
 {{ define "main" }}
 {{ .Content }}
-<header class="text-center text-body-secondary m-5">
-  <h2>
+<header class="text-center mb-5">
+  <h2 class="text-3xl">
     {{ .Site.Params.Subtitle }}
   </h2>
-  <h5>
+  <h5 class="text-2xl">
     with {{ .Site.Params.Author }}
   </h5>
 </header>
-<main>
+<main class="text-gray-400">
   <section>
-    <h4 class="hstack border-bottom p-2 border-dark">
+    <h4 class="flex text-2xl px-5">
       <span>
         Top Stories
-      </span><a class="ms-auto text-body-secondary fs-5" href="/stories">
+      </span><a class="ms-auto" href="/stories">
         More Stories »
       </a>
     </h4>
-    <div class="row row-cols-1 row-cols-lg-3 g-3 m-4">
+    <div class="grid grid lg:grid-cols-3 gap-5 p-5">
       {{ range first 9 (where .Site.RegularPages "Section" "story") }}
       {{ partial "story" . }}
       {{ end }}
     </div>
   </section>
   <section>
-    <h4 class="hstack border-bottom p-2 border-dark">
+    <h4 class="flex text-2xl px-10">
       <span>
         Featured Projects
-      </span><a class="ms-auto text-body-secondary fs-5" href="/projects">
+      </span><a class="ms-auto" href="/projects">
         More Projects »
       </a>
     </h4>
-    <div class="row row-cols-1 row-cols-lg-2 g-3 m-4">
+    <div class="grid lg:grid-cols-2 gap-5 p-5">
       {{ range sort (where (where .Site.RegularPages "Section" "project") "Params.featured" ">" 0) "Params.featured"
       "asc" }}
       {{ partial "project" . }}
@@ -39,15 +39,15 @@
     </div>
   </section>
   <section>
-    <h4 class="hstack border-bottom p-2 border-dark rounded">
+    <h4 class="">
       <span>
         Last Learned:
       </span>
-      <a class=" ms-auto text-body-secondary fs-5" href="/tils">
+      <a class="" href="/tils">
         More »
       </a>
     </h4>
-    <div class="row m-4 p-4">
+    <div class="">
       {{ range first 1 (where .Site.RegularPages "Section" "til") }}
       {{ partial "til" . }}
       {{ end }}
