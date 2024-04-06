@@ -17,10 +17,11 @@
   {{ template "_internal/google_analytics.html" . }}
 </head>
 
-<body class="dark overscroll-none bg-black text-white font-['Comic_Sans_MS']">
+<body class="overscroll-none bg-black text-white">
   <div class="
+      transition-all duration-150
       z-50 fixed top-0 bottom-0 overflow-hidden
-      w-[30px] h-[55px]
+      w-[30px] h-[60px]
       lg:w-[300px] lg:h-[800px]
       hover:w-[300px] hover:h-[800px]
       font-['Comic_Sans_MS']
@@ -28,13 +29,16 @@
       ">
     {{ partial "navbar.html" . }}
   </div>
-  <h1 class="lg:ms-[300px] font-['Comic_Sans_MS'] text-6xl font-bold text-center p-8 shadow-white drop-shadow-xl">
-    Puddle Of Code
-  </h1>
-  <div class="lg:ms-[300px]">
+  <a href="/">
+    <h1
+      class="text-6xl font-bold absolute top-[10px] left-[130px] font-['Comic_Sans_MS'] opacity-70 drop-shadow-[0_15px_20px_rgba(255,255,255,1)]">
+      Puddle Of Code
+    </h1>
+  </a>
+  <div class=" relative pt-[75px] lg:left-[300px] lg:w-[calc(100%-300px)]">
     {{ block "main" . }}{{ end }}
   </div>
-  <div class="lg:ms-[300px]">
+  <div class="relative lg:left-[300px] lg:w-[calc(100%-300px)]">
     {{ partial "footer.html" . }}
   </div>
 </body>
