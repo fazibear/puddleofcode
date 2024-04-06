@@ -29,13 +29,24 @@
       ">
     {{ partial "navbar.html" . }}
   </div>
-  <a href="/">
-    <h1
-      class="text-6xl font-bold absolute top-[10px] left-[130px] font-['Comic_Sans_MS'] opacity-70 drop-shadow-[0_15px_20px_rgba(255,255,255,1)]">
-      Puddle Of Code
-    </h1>
+  <a href="/" class="
+      text-6xl font-bold absolute
+      top-[10px] lg:left-[130px]
+      font-['Comic_Sans_MS'] opacity-70
+      drop-shadow-[0_15px_20px_rgba(255,255,255,1)]
+      text-center
+      w-full lg:text-left
+      ">
+    <h1>Puddle Of Code</h1>
   </a>
-  <div class=" relative pt-[75px] lg:left-[300px] lg:w-[calc(100%-300px)]">
+  <header class="text-3xl pt-[75px] m-5 text-gray-100 text-center lg:text-right">
+    {{ if .Title }}
+    {{ .Title }}
+    {{ else }}
+    {{ .Site.Params.Subtitle }} with {{ .Site.Params.Author }}
+    {{ end }}
+  </header>
+  <div class=" relative lg:left-[300px] lg:w-[calc(100%-300px)]">
     {{ block "main" . }}{{ end }}
   </div>
   <div class="relative lg:left-[300px] lg:w-[calc(100%-300px)]">
