@@ -1,3 +1,27 @@
-<nav class="d-flex justify-content-center">
-  {{ template "_internal/pagination.html" . }}
-</nav>
+{{ $paginator := .Paginator }}
+
+{{ if gt $paginator.TotalPages 1 }}
+<ul class="list-style-none flex">
+  {{ if $paginator.HasPrev }}
+  <li>
+    <a href="{{ $paginator.Prev.URL }}" class="pagination__link pagination__link--previous">
+      «
+    </a>
+  </li>
+  {{ end }}
+  {{ range $paginator.Pagers }}
+  <li>
+    <a href="{{ .URL }}" class="">
+      {{ .PageNumber }}
+    </a>
+  </li>
+  {{ end }}
+  {{ if $paginator.HasNext }}
+  <li>
+    <a href="{{ $paginator.Next.URL }}" class="">
+      »
+    </a>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
