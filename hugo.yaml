@@ -32,8 +32,8 @@ markup:
     lineNumbersInTable: true
     noClasses: true
     noHl: false
-    style: onedark
-    tabWidth: 4
+    style: catppuccin-mocha
+    tabWidth: 2
 
 Params:
   title: Puddle Of Code
@@ -42,3 +42,5 @@ Params:
   author_nick: fazibear
   author_image: /images/authors/fazibear.png
   description: Programming Adventures with Michał Kalbarczyk
+  style:
+    h1: text-3xl m-5 text-header-2

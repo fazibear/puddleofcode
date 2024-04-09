@@ -1,12 +1,11 @@
 {{ define "main" }}
+<h1 class="text-center">
+  {{ .Title }}
+</h1>
 <main>
   {{ partial "pagination" . }}
   <section>
-    <div class="grid lg:grid-cols-3 gap-5 p-5">
-      {{ range .Paginator.Pages }}
-      {{ partial "story" . }}
-      {{ end }}
-    </div>
+    {{ partial "stories" (dict "context" . "stories" (.Paginator.Pages)) }}
   </section>
   {{ partial "pagination" . }}
 </main>

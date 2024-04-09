@@ -1,27 +1,33 @@
 {{ $paginator := .Paginator }}
 
 {{ if gt $paginator.TotalPages 1 }}
-<ul class="list-style-none flex">
-  {{ if $paginator.HasPrev }}
+<ul class="flex space-x-2 justify-center list-none">
   <li>
-    <a href="{{ $paginator.Prev.URL }}" class="pagination__link pagination__link--previous">
+    <a {{ if $paginator.HasPrev}} href="{{ $paginator.Prev.URL }}" {{end}}
+      class="flex items-center justify-center w-10 h-10 text-gray-600 transition-colors duration-150 rounded-full focus:shadow-outline hover:bg-gray-400">
       «
     </a>
   </li>
-  {{ end }}
   {{ range $paginator.Pagers }}
   <li>
-    <a href="{{ .URL }}" class="">
+    {{ if eq . $paginator }}
+    <a href="{{ .URL }}"
+      class="flex items-center justify-center w-10 h-10 text-white transition-colors duration-150 bg-gray-600 rounded-full focus:shadow-outline">
       {{ .PageNumber }}
     </a>
+    {{else}}
+    <a href="{{ .URL }}"
+      class="flex items-center justify-center w-10 h-10 text-gray-600 transition-colors duration-150 rounded-full focus:shadow-outline hover:bg-gray-400">
+      {{ .PageNumber }}
+    </a>
+    {{ end }}
   </li>
   {{ end }}
-  {{ if $paginator.HasNext }}
   <li>
-    <a href="{{ $paginator.Next.URL }}" class="">
+    <a {{ if $paginator.HasNext}} href="{{ $paginator.Next.URL }}" {{end}}
+      class="flex items-center justify-center w-10 h-10 text-gray-600 transition-colors duration-150 rounded-full focus:shadow-outline hover:bg-gray-400">
       »
     </a>
   </li>
-  {{ end }}
 </ul>
 {{ end }}

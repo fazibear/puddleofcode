@@ -1,41 +1,42 @@
 {{ define "main" }}
 {{ .Content }}
-<main class="text-gray-400">
+<h3 class="text-center">
+  {{ .Site.Params.Subtitle }}
+</h3>
+<h4 class="text-center">
+  with
+</h4>
+<h4 class="text-center">
+  {{ .Site.Params.Author }}
+</h4>
+<main>
   <section>
-    <h4 class="flex text-2xl px-5">
+    <h4 class="flex text-2xl px-5 mb-2 text-header-4">
       <span>
         Top Stories
       </span><a class="ms-auto" href="/stories">
         More Stories »
       </a>
     </h4>
-    <div class="grid lg:grid-cols-3 gap-5 p-5">
-      {{ range first 9 (where .Site.RegularPages "Section" "story") }}
-      {{ partial "story" . }}
-      {{ end }}
-    </div>
+    {{ partial "stories" (dict "context" . "stories" (first 9 (where .Site.RegularPages "Section" "story"))) }}
   </section>
   <section>
-    <h4 class="flex text-2xl px-5">
+    <h4 class="flex text-2xl px-5 mb-2 text-header-4">
       <span>
         Featured Projects
       </span><a class="ms-auto" href="/projects">
         More Projects »
       </a>
     </h4>
-    <div class="grid lg:grid-cols-2 gap-5 p-5">
-      {{ range sort (where (where .Site.RegularPages "Section" "project") "Params.featured" ">" 0) "Params.featured"
-      "asc" }}
-      {{ partial "project" . }}
-      {{ end }}
-    </div>
+    {{ partial "projects" (dict "context" . "projects" (sort (where (where .Site.RegularPages "Section" "project")
+    "Params.featured" ">" 0) "Params.featured" "asc")) }}
   </section>
   <section>
-    <h4 class="">
+    <h4 class="flex text-2xl px-5 mb-2 text-header-4">
       <span>
         Last Learned:
       </span>
-      <a href=" /tils">
+      <a class="ms-auto" href="/tils">
         More »
       </a>
     </h4>

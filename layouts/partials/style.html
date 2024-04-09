@@ -1,0 +1,50 @@
+<script src="https://cdn.tailwindcss.com/3.4.3"></script>
+<script>
+  tailwind = window.tailwind || {};
+  tailwind.config = {
+    corePlugins: {
+      preflight: false,
+    },
+    theme: {
+      extend: {
+        colors: {
+          background: '#11111b',
+          foreground: '#dddddd',
+          logo: '#FFF',
+          primary: '#2b6cb0',
+          secondary: '#2c5282',
+          accent: '#f56565',
+          muted: '#718096',
+          shadow: '#900',
+        },
+      },
+    },
+  }
+</script>
+
+<style>
+  *,
+  ::before,
+  ::after {
+    border-width: 0;
+    border-style: solid;
+    border-color: theme('borderColor.DEFAULT', currentColor);
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .highlight {
+    margin: 3rem;
+    padding: 1rem;
+    border: 1px solid #444;
+    overflow: scroll;
+    font-size: 0.8rem;
+  }
+
+  .highlight pre {
+    background-color: transparent !important;
+  }
+</style>
