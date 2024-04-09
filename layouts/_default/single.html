@@ -1,20 +1,11 @@
 {{ define "main" }}
 <div class="">
   {{ if not (isset .Params "single") }}
-  <div class="text-center my-10" style="background-repeat: no-repeat; background-position: center; background-size: cover; background-image:
-    linear-gradient(transparent -100%, black 75%), url({{ .Params.Image }})">
+  <div class="text-center my-10 bg-no-repeat bg-position bg-center bg-cover"
+    style="background-image: linear-gradient(transparent -100%, black 100%), url({{ .Params.Image }})">
     <h1>
       {{ .Title }}
     </h1>
-    <a href="/about">
-      <img alt="{{ .Site.Params.AuthorNick }}" class="inline-block h-[75px] w-[75px] rounded-full"
-        src="{{ .Site.Params.author_image }}" />
-    </a>
-    <h5>
-      <a href="/about">
-        {{ .Site.Params.author }}
-      </a>
-    </h5>
     <p class="">
       <span>
         {{ .Date.Format "2 January 2006" }}

@@ -1,0 +1,14 @@
+<div class="px-2">
+  {{ range .tils }}
+  <div class="border border-gray-700 rounded-xl overflow-hidden shadow-gray-800 shadow-xl mb-5">
+    <h2 class="m-0 p-2 text-gray-400">
+      <a href=" {{ .Permalink }}">
+        {{ .Title }}
+      </a>
+    </h2>
+    <div class="border-t border-gray-700 text-gray-500 p-2 m-0">
+      {{ .Content }}
+    </div>
+  </div>
+  {{ end }}
+</div>

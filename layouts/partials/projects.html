@@ -4,16 +4,16 @@
     <a href="{{ .Permalink }}">
       <img alt="{{ .Title }}" class="w-[200px] h-[200px] object-cover" src="{{ .Params.Image }}" />
     </a>
-    <div class="ms-5 w-full">
-      <h3 class="flex text-3xl my-3 me-3 text-gray-400">
+    <div class="mx-5 w-full">
+      <h3 class="text-3xl mt-2 mb-1 text-gray-400">
         <a href="{{ .Permalink }}">
           {{ .Title }}
         </a>
-        <small class="ms-auto text-sm text-gray-600 text-right min-w-[80px]">
-          {{ .Date.Format "2006-01-02" }}
-        </small>
       </h3>
-      <p class="text-gray-500 h-full">
+      <small class="text-xs text-gray-600">
+        {{ .Date.Format "2006-01-02" }}
+      </small>
+      <p class="text-gray-500 mt-2 text-justify">
         {{ .Summary }}
       </p>
     </div>

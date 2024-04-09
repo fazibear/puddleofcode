@@ -5,9 +5,7 @@
 <main>
   {{ partial "pagination" . }}
   <section>
-    {{ range .Paginator.Pages }}
-    {{ partial "til" . }}
-    {{ end }}
+    {{ partial "tils" (dict "context" . "tils" (.Paginator.Pages)) }}
   </section>
   {{ partial "pagination" . }}
 </main>
