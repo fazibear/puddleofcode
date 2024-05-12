@@ -42,5 +42,3 @@ Params:
   author_nick: fazibear
   author_image: /images/authors/fazibear.png
   description: Programming Adventures with Michał Kalbarczyk
-  style:
-    h1: text-3xl m-5 text-header-2

@@ -8,9 +8,9 @@
   </h4>
   <main>
     <section>
-      <h4 class="flex text-2xl px-5 mb-2 text-header-4">
+      <h4 class="flex text-2xl px-5 mb-2">
         <span>
-          Top Stories
+          Latest Stories
         </span><a class="ms-auto" href="/stories">
           More Stories »
         </a>
@@ -18,7 +18,7 @@
       {{ partial "stories" (dict "context" . "stories" (first 9 (where .Site.RegularPages "Section" "story"))) }}
     </section>
     <section>
-      <h4 class="flex text-2xl px-5 mb-2 text-header-4">
+      <h4 class="flex text-2xl px-5 mb-2">
         <span>
           Featured Projects
         </span><a class="ms-auto" href="/projects">
@@ -29,7 +29,7 @@
       "Params.featured" ">" 0) "Params.featured" "asc")) }}
     </section>
     <section>
-      <h4 class="flex text-2xl px-5 mb-2 text-header-4">
+      <h4 class="flex text-2xl px-5 mb-2">
         <span>
           Last Learned:
         </span>
