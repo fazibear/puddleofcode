@@ -68,6 +68,8 @@ List of elixir packages I've created:
 - Export
 - ExIcal
 
+<!--more-->
+
 # Airbrakex
 
 Elixir client for the [Airbrake](https://airbrake.io/) service!

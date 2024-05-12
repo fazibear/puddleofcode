@@ -86,6 +86,8 @@ Opal Gems:
 - Virtual DOM
 - MIDI Wrapper
 
+<!--more-->
+
 # Airbrake
 
 Opal wrapper for [airbrake-js](https://github.com/airbrake/airbrake-js) javascript library.

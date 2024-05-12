@@ -71,6 +71,7 @@ Ruby gems I've created:
 - Gruby
 - OxmlRpc
 
+<!--more-->
 
 # Colorize
 

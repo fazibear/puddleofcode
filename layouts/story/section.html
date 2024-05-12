@@ -2,7 +2,7 @@
 <h1 class="text-center">
   {{ .Title }}
 </h1>
-<main>
+<main class="px-6">
   {{ partial "pagination" . }}
   <section>
     {{ partial "stories" (dict "context" . "stories" (.Paginator.Pages)) }}
