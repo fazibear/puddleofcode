@@ -1,9 +1,13 @@
 {{ define "main" }}
-<div class="px-6">
+<div class="py-10" style="
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    background-image: linear-gradient(transparent -4%, black 300px), url({{ .Params.Image }})
+  ">
   {{ if not (isset .Params "single") }}
-  <div class="text-center my-10 bg-no-repeat bg-position bg-center bg-cover"
-    style="background-image: linear-gradient(transparent -100%, black 100%), url({{ .Params.Image }})">
-    <h1>
+  <div class="text-center pb-10">
+    <h1 class="text-5xl">
       {{ .Title }}
     </h1>
     <p class="">
