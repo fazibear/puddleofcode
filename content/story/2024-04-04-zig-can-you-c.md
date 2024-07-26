@@ -45,6 +45,7 @@ Create `build.zig.zon` file.
 .{
     .name = "ray_test_zig",
     .version = "0.0.1",
+    .paths = .{""},
 
     .dependencies = .{
         .raylib = .{
