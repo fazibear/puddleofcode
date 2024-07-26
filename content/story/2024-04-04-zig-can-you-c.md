@@ -18,10 +18,6 @@ How are you going to manage depenencies?
 
 OK, So try to use some C library in ZIG! How hard it will be? Let's see.
 
-
-NOTE: It works only with Zig 0.11. Anyway raylib a good example. There is build.zig included and makes things easier ;]
-
-
 Try to write somple app using `raylib`.
 
 ```bash
@@ -53,7 +49,7 @@ Create `build.zig.zon` file.
 
     .dependencies = .{
         .raylib = .{
-            .url = "https://github.com/raysan5/raylib/archive/refs/tags/5.0.tar.gz",
+            .url = "https://github.com/raysan5/raylib/archive/efce4d69ce913bca42289184b0bffe4339c0193f.tar.gz",
         },
     },
 }
@@ -67,10 +63,11 @@ $ zig build
 What it is?
 
 ```
-Fetch Packages... raylib... ./ray_test_zig/build.zig.zon:7:20: error: url field is missing corresponding hash field
-.url = "https://github.com/raysan5/raylib/archive/refs/tags/5.0.tar.gz",
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-note: expected .hash = "1220c28847ca8e8756734ae84355802b764c9d9cf4de057dbc6fc2b15c56e726f27b",
+...build.zig.zon:7:20: error: dependency is missing hash field
+            .url = "https://github.com/raysan5/raylib/archive/efce4d69ce913bca42289184b0bffe4339c0193f.tar.gz",
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+note: expected .hash = "1220055a322aac82f0c8104810bac892eaf62ab11582ca0f7bd1d04081048c67a081",
+
 ```
 
 Ok, zon expects a hash, just in case someone will try to hack out computer. Once again:
@@ -82,8 +79,8 @@ Ok, zon expects a hash, just in case someone will try to hack out computer. Once
 
     .dependencies = .{
         .raylib = .{
-            .url = "https://github.com/raysan5/raylib/archive/refs/tags/5.0.tar.gz",
-            .hash = "1220c28847ca8e8756734ae84355802b764c9d9cf4de057dbc6fc2b15c56e726f27b",
+            .url = "https://github.com/raysan5/raylib/archive/efce4d69ce913bca42289184b0bffe4339c0193f.tar.gz",
+            .hash = "1220055a322aac82f0c8104810bac892eaf62ab11582ca0f7bd1d04081048c67a081",
         },
     },
 }
@@ -157,3 +154,5 @@ We got the raylib window!
 As you can see! Just one line of code and `raylib` working like native lib!
 
 So yep! Zig can C!
+
+PS. raylib a good example. There is build.zig included and makes things easier ;]
