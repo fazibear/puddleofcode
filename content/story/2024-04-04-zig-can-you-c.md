@@ -155,4 +155,4 @@ As you can see! Just one line of code and `raylib` working like native lib!
 
 So yep! Zig can C!
 
-PS. raylib a good example. There is build.zig included and makes things easier ;]
+PS. raylib is not a good example. It have build.zig file included to make things easier ;]
