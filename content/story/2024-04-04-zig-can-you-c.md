@@ -18,6 +18,8 @@ How are you going to manage depenencies?
 
 OK, So try to use some C library in ZIG! How hard it will be? Let's see.
 
+NOTE: It works only with Zig 0.11. Anyway this is lib is not a good example. Raylib have build.zig included.
+
 Try to write somple app using `raylib`.
 
 ```bash
