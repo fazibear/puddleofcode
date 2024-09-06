@@ -1,43 +1,45 @@
 {{ define "main" }}
 {{ .Content }}
-<h1 class="text-center">
-  {{ .Site.Params.Subtitle }}
-  </h3>
-  <h4 class="text-center">
-    with {{ .Site.Params.Author }}
-  </h4>
-  <main class="px-6">
-    <section>
-      <h4 class="flex text-2xl px-5 mb-2">
-        <span>
-          Latest Stories
-        </span><a class="ms-auto" href="/stories">
-          More Stories »
-        </a>
-      </h4>
-      {{ partial "stories" (dict "context" . "stories" (first 9 (where .Site.RegularPages "Section" "story"))) }}
-    </section>
-    <section>
-      <h4 class="flex text-2xl px-5 mb-2">
-        <span>
-          Featured Projects
-        </span><a class="ms-auto" href="/projects">
-          More Projects »
-        </a>
-      </h4>
-      {{ partial "projects" (dict "context" . "projects" (sort (where (where .Site.RegularPages "Section" "project")
-      "Params.featured" ">" 0) "Params.featured" "asc")) }}
-    </section>
-    <section>
-      <h4 class="flex text-2xl px-5 mb-2">
-        <span>
-          Last Learned:
-        </span>
-        <a class="ms-auto" href="/tils">
-          More »
-        </a>
-      </h4>
-      {{ partial "tils" (dict "context" . "tils" (first 1 (where .Site.RegularPages "Section" "til"))) }}
-    </section>
-  </main>
-  {{ end }}
+<header class="font-comic">
+  <h1 class=" text-center">
+    {{ .Site.Params.Subtitle }}
+    </h3>
+    <h4 class="text-center">
+      with {{ .Site.Params.Author }}
+    </h4>
+</header>
+<main class="px-6">
+  <section>
+    <h4 class="flex text-2xl px-5 mb-2">
+      <span>
+        Latest Stories
+      </span><a class="ms-auto" href="/stories">
+        More Stories »
+      </a>
+    </h4>
+    {{ partial "stories" (dict "context" . "stories" (first 9 (where .Site.RegularPages "Section" "story"))) }}
+  </section>
+  <section>
+    <h4 class="flex text-2xl px-5 mb-2">
+      <span>
+        Featured Projects
+      </span><a class="ms-auto" href="/projects">
+        More Projects »
+      </a>
+    </h4>
+    {{ partial "projects" (dict "context" . "projects" (sort (where (where .Site.RegularPages "Section" "project")
+    "Params.featured" ">" 0) "Params.featured" "asc")) }}
+  </section>
+  <section>
+    <h4 class="flex text-2xl px-5 mb-2">
+      <span>
+        Last Learned:
+      </span>
+      <a class="ms-auto" href="/tils">
+        More »
+      </a>
+    </h4>
+    {{ partial "tils" (dict "context" . "tils" (first 1 (where .Site.RegularPages "Section" "til"))) }}
+  </section>
+</main>
+{{ end }}

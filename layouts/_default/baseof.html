@@ -17,14 +17,14 @@
   {{ template "_internal/google_analytics.html" . }}
 </head>
 
-<body class="overscroll-none bg-background text-foreground font-mono">
+<body class="overscroll-none bg-background text-foreground">
   <div class="
       transition-all duration-150
       z-40 fixed top-0 bottom-0 overflow-hidden
       w-[30px] h-[60px]
       lg:w-[300px] lg:h-[800px]
       hover:w-[300px] hover:h-[800px]
-      font-['Comic_Sans_MS']
+      font-comic
       opacity-70
       ">
     {{ partial "navbar.html" . }}
@@ -33,7 +33,7 @@
     <header class="
       text-6xl font-bold absolute
       z-50 top-[10px] left-[40px] lg:left-[130px]
-      font-['Comic_Sans_MS'] opacity-70
+      font-comic opacity-70
       text-center text-logo
       lg:text-left inline-block
       ">

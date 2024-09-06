@@ -105,7 +105,7 @@ docker run --rm \
     make $@
 ```
 
-This example is for RPI3. For other platdorm just adjust `ARCH`, `KERNEL`, and `CROSS_COMPILE` envs.
+This example is for RPI3. For other platform just adjust `ARCH`, `KERNEL`, and `CROSS_COMPILE` envs.
 
 Make it executable:
 
