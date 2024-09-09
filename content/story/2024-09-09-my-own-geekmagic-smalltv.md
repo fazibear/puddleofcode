@@ -24,9 +24,16 @@ Here you are:
 
 {{< youtube id="70CDu9o2_Yo" width="50%" >}}
 
-What to we need? USB to TTL converter, few spare pins and solder iron.
+And this is mine:
 
 ![minitv](/images/content/minitv.jpg)
+
+What to we need?
+ - USB to TTL converter
+ - few spare pins
+ - solder iron
+ - few cables
+ - computer ;)
 
 I think you guess it, but:
 
@@ -119,7 +126,7 @@ I just need to write another front end to display things on tft display. Let's d
 
 FEW HOURS LATER
 
-Voila!
+Voila! Yet another interesting project without AI :P
 
 ![minitv](/images/content/minitv_weather.jpg)
 ![minitv](/images/content/minitv_crab.jpg)
