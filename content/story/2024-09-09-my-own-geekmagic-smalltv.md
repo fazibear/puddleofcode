@@ -79,7 +79,7 @@ Now we're talking.
 
 Our brand new `main.c`:
 
-```
+```c
 #include <Arduino.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_ST7789.h>
