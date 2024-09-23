@@ -14,6 +14,8 @@ You have a mac? You need to compile linux kernel for your Raspberry PI?
 
 Great. Follow me…
 
+<!--more-->
+
 ### Part 1. Case sensitive file system
 
 Note: This step is required if you want to have kernel files outside docker.
