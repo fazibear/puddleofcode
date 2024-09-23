@@ -7,6 +7,8 @@ featured: 3
 
 Pixel frame like project, but with Raspberry Pi inside.
 
+<!--more-->
+
 Related links:
 - [pix_project](https://github.com/fazibear/pix_project)
 - [pix_elixir](https://github.com/fazibear/pix_elixir)
