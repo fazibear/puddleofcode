@@ -8,6 +8,10 @@ tags:
   - docker
 ---
 
-Github: https://github.com/fazibear/codeclimate-credo
 
-Code Climate engine for [Credo](https://github.com/rrrene/credo) a static code analysis tool for the [Elixir Language](http://elixir-lang.org/).
+Code Climate engine for Credo
+
+<!--more-->
+
+Github: https://github.com/fazibear/codeclimate-credo
+[Credo](https://github.com/rrrene/credo) a static code analysis tool for the [Elixir Language](http://elixir-lang.org/).

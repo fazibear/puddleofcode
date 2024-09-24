@@ -3,13 +3,14 @@ title: Elixir Packages
 image: /images/projects/elixirpackage.png
 ---
 
-List of elixir packages I've created:
+Elixir packages I've created.
+
+<!--more-->
+
 - Airbrakex
 - Defql
 - Export
 - ExIcal
-
-<!--more-->
 
 # Airbrakex
 

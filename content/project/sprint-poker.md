@@ -10,8 +10,10 @@ tags:
 ---
 Online estimation tool for Agile teams.
 
+<!--more-->
+
 Links:
- 
+
  - https://sprintpoker.io
  - https://github.com/elpassion/sprint-poker
  - https://github.com/elpassion/sprint-poker-inesita

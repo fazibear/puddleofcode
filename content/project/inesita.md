@@ -2,10 +2,14 @@
 date: 2015-06-21
 title: Inesita
 image: /images/projects/inesita.png
-#featured: 2
+featured: 5
 ---
 
-Inesita is a web frontend framework for fast building browser application using Ruby. It uses Virtual DOM for page render.
+Inesita is a web frontend framework in Ruby.
+
+<!--more-->
+
+for fast building browser application using Ruby. It uses Virtual DOM for page render.
 
 https://inesita.fazibear.me/
 

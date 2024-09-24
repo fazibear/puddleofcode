@@ -3,14 +3,15 @@ title: Opal Gems
 image: /images/projects/opalgem.png
 ---
 
-Opal Gems:
+Opal Gems made by me.
+
+<!--more-->
+
 - Airbrake
 - Phoenix
 - SID
 - Virtual DOM
 - MIDI Wrapper
-
-<!--more-->
 
 # Airbrake
 

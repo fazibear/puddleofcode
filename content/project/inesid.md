@@ -7,6 +7,8 @@ featured: 4
 
 Open source Retro Web SID Player
 
+<!--more-->
+
 Related links:
 - https://inesid.fazibear.me
 - https://github.com/fazibear/inesid

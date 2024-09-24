@@ -3,13 +3,15 @@ title: Ryby Gems
 image: /images/projects/rubygem.png
 ---
 
-Ruby gems I've created:
+Ruby gems I've created.
+
+<!--more-->
+
 - Colorize
 - Frubby
 - Gruby
 - OxmlRpc
 
-<!--more-->
 
 # Colorize
 
