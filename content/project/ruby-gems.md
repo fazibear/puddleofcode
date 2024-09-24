@@ -1,6 +1,7 @@
 ---
-title: Ryby Gems
+title: Ruby Gems
 image: /images/projects/rubygem.png
+featured: 14
 ---
 
 Ruby gems I've created.

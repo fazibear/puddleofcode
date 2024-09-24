@@ -2,6 +2,7 @@
 date: 2016-06-04
 title: Elixir Engine For CodeClimate
 image: /images/projects/codeclimate-credo.png
+featured: 100
 tags:
   - elixir
   - credo

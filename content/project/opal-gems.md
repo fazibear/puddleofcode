@@ -1,6 +1,7 @@
 ---
 title: Opal Gems
 image: /images/projects/opalgem.png
+featured: 15
 ---
 
 Opal Gems made by me.

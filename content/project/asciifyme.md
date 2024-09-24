@@ -2,6 +2,7 @@
 date: 2015-12-12
 title: asciifyme
 image: /images/projects/asciifyme.png
+featured: 15
 ---
 Funny app that turns your face into ascii art!
 

@@ -2,7 +2,7 @@
 date: 2024-03-03
 title: kurvix
 image: /images/projects/kurvix.png
-featured: 5
+featured: 4
 ---
 
 Kurvix is a shoot 'em up arcade video game developed in Rust.

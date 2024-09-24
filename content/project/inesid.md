@@ -2,7 +2,7 @@
 date: 2016-04-01
 title: inesid
 image: /images/projects/inesid.png
-featured: 4
+featured: 3
 ---
 
 Open source Retro Web SID Player

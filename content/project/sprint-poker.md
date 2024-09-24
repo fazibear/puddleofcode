@@ -2,6 +2,7 @@
 date: 2015-06-30
 title: Sprint Poker
 image: /images/projects/sprintpoker.png
+featured: 99
 tags:
   - elixir
   - phoenix

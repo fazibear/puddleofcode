@@ -2,7 +2,7 @@
 date: 2017-12-08
 title: fazic
 image: /images/projects/fazic.png
-featured: 3
+featured: 1
 description: Fantasy retro computer with built-in basic interpreter.
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Elixir Packages
 image: /images/projects/elixirpackage.png
+featured: 12
 ---
 
 Elixir packages I've created.
