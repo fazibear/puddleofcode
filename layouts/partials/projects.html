@@ -1,20 +1,16 @@
-<div class="grid lg:grid-cols-2 gap-8 p-2">
+<ul class="m-0 p-0 grid grid-cols-3 md:grid-cols-4 gap-1">
   {{ range sort .projects "Params.featured" "asc"}}
-  <div
-    class="flex flex-row border border-gray-700 rounded-xl overflow-hidden shadow-gray-800 shadow-xl text-gray-500 h-[100px]">
+  <li class="list-none text-gray-400 text-center">
     <a href="{{ .Permalink }}">
-      <img alt="{{ .Title }}" class="w-[100px] h-[100px] object-cover" src="{{ .Params.Image }}" />
+      <img alt="{{ .Title }}"
+        class="h-[150px] w-[150px] bg-no-repeat bg-[size:50%] bg-center bg-[url('{{ .Params.Image }}')]"
+        src="/images/splash_mask.png" alt="{{ .Title }}" />
     </a>
-    <div class="mx-5">
-      <h3 class="text-3xl mt-1 mb-1 text-gray-400">
-        <a href="{{ .Permalink }}">
-          {{ .Title }}
-        </a>
-      </h3>
-      <p class="m-0 p-0 text-justify">
-        {{ .Summary | plainify }}
-      </p>
-    </div>
-  </div>
+    <h2 class="my-2 relative top-[-25px] ">
+      <a href="{{ .Permalink }}">
+        {{ .Title }}
+      </a>
+    </h2>
+  </li>
   {{ end }}
-</div>
+</ul>

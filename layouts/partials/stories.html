@@ -1,27 +1,27 @@
-<div class="grid lg:grid-cols-3 gap-16 px-2">
+<ul class="m-0 p-0">
   {{ range .stories }}
-  <div class="flex flex-col border border-gray-700 rounded-xl overflow-hidden shadow-gray-800 shadow-xl">
+  <li class="list-none text-gray-400 flex">
     <a href="{{ .Permalink }}">
-      <img alt="{{ .Title }}" class="h-[200px] w-full object-cover" src="{{ .Params.Image }}" />
+      <img alt="{{ .Title }}"
+        class="h-[150px] w-[150px] bg-no-repeat bg-[size:50%] bg-center bg-[url('{{ .Params.Image }}')]"
+        src="/images/splash_mask.png" alt="{{ .Title }}" />
     </a>
-    <h2 class="text-gray-400 px-2">
-      <a href="{{ .Permalink }}">
-        {{ .Title }}
-      </a>
-    </h2>
-    <div class="flex flex-col h-full text-gray-500 text-justify px-2">
-      {{ .Summary }}
-    </div>
-    <div class="flex mt-2 p-2 border-t border-gray-700 text-gray-600 text-xs">
-      <span>
+    <div class="">
+      <h2 class="my-2">
+        <a href="{{ .Permalink }}">
+          {{ .Title }}
+        </a>
+      </h2>
+      <div class="mt-1">
+        {{ .Summary | plainify }}
+      </div>
+      <div class="text-gray-600 mt-2">
         {{ .Date.Format "2 January 2006" }}
-      </span>
-      <span class="ms-auto text-right">
         {{ if or (gt .ReadingTime 1) }}
-        Reading time: {{ .ReadingTime }} minutes
+        ・ Reading time: {{ .ReadingTime }} minutes
         {{ end }}
-      </span>
+      </div>
     </div>
-  </div>
+  </li>
   {{ end }}
-</div>
+</ul>

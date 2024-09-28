@@ -10,17 +10,15 @@
     <h1 class="text-5xl">
       {{ .Title }}
     </h1>
-    <p class="">
-      <span>
-        {{ .Date.Format "2 January 2006" }}
-      </span>
+    <span>
+      {{ .Date.Format "2 January 2006" }}
       {{ if or (gt .ReadingTime 1) }}
-      - Reading time: {{ .ReadingTime }} minutes
+      ・ Reading time: {{ .ReadingTime }} minutes
       {{ end }}
-    </p>
+    </span>
   </div>
   {{ end }}
-  <div class="content">
+  <div class="content mt-10 mx-10">
     {{ .Content }}
   </div>
   {{ if not (isset .Params "single") }}
