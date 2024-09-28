@@ -1,9 +1,9 @@
 <ul class="m-0 p-0">
   {{ range .stories }}
-  <li class="list-none text-gray-400 flex">
+  <li class="list-none flex">
     <a href="{{ .Permalink }}">
       <img alt="{{ .Title }}"
-        class="h-[150px] w-[150px] bg-no-repeat bg-[size:50%] bg-center bg-[url('{{ .Params.Image }}')]"
+        class="h-[150px] w-[150px] bg-no-repeat bg-[size:60%] bg-center bg-[url('{{ .Params.Image }}')]"
         src="/images/splash_mask.png" alt="{{ .Title }}" />
     </a>
     <div class="">
@@ -12,7 +12,7 @@
           {{ .Title }}
         </a>
       </h2>
-      <div class="mt-1">
+      <div class="mt-1 text-gray-400">
         {{ .Summary | plainify }}
       </div>
       <div class="text-gray-600 mt-2">

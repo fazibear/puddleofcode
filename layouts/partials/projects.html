@@ -1,12 +1,12 @@
 <ul class="m-0 p-0 grid grid-cols-3 md:grid-cols-4 gap-1">
   {{ range sort .projects "Params.featured" "asc"}}
-  <li class="list-none text-gray-400 text-center">
+  <li class="list-none text-center">
     <a href="{{ .Permalink }}">
       <img alt="{{ .Title }}"
-        class="h-[150px] w-[150px] bg-no-repeat bg-[size:50%] bg-center bg-[url('{{ .Params.Image }}')]"
+        class="h-[150px] w-[150px] bg-no-repeat bg-[size:60%] bg-center bg-[url('{{ .Params.Image }}')]"
         src="/images/splash_mask.png" alt="{{ .Title }}" />
     </a>
-    <h2 class="my-2 relative top-[-25px] font-comic">
+    <h2 class="my-2 relative top-[-35px] font-comic">
       <a href="{{ .Permalink }}">
         {{ .Title }}
       </a>
