@@ -29,17 +29,16 @@
       ">
     {{ partial "navbar.html" . }}
   </div>
-  <a href="/">
-    <header class="
+  <header class="
       text-6xl font-bold absolute
-      z-50 top-[10px] left-[40px] lg:left-[130px]
+      z-50 top-[10px] lg:left-[130px]
       font-comic opacity-70
       text-center text-logo
       lg:text-left inline-block
+      w-[100%]
       ">
-      Puddle Of Code
-    </header>
-  </a>
+    <a href="/">Puddle Of Code</a>
+  </header>
   <div class="relative lg:left-[300px] lg:w-[calc(100%-300px)] pt-[75px]">
     {{ block "main" . }}{{ end }}
   </div>
