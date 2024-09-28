@@ -10,7 +10,7 @@
 </header>
 <main>
   <section>
-    <h4 class="flex text-2xl px-5 mb-2">
+    <h4 class="flex text-2xl px-5 mb-2 font-comic">
       <span>
         Latest Stories
       </span><a class="ms-auto" href="/stories">
@@ -20,7 +20,7 @@
     {{ partial "stories" (dict "context" . "stories" (first 5 (where .Site.RegularPages "Section" "story"))) }}
   </section>
   <section>
-    <h4 class="flex text-2xl px-5 mb-2">
+    <h4 class="flex text-2xl px-5 mb-2 font-comic">
       <span>
         Featured Projects
       </span><a class="ms-auto" href="/projects">
@@ -30,7 +30,7 @@
     {{ partial "projects" (dict "context" . "projects" (sort (where (where .Site.RegularPages "Section" "project")
     "Params.featured" "<" 10) "Params.featured" "asc" )) }} </section>
       <section>
-        <h4 class="flex text-2xl px-5 mb-2">
+        <h4 class="flex text-2xl px-5 mb-2 font-comic">
           <span>
             Last Learned:
           </span>
