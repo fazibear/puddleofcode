@@ -1,6 +1,6 @@
 ---
 date: 2024-08-20
-title: Resurecting Kitara - Part 1
+title: Pitara - Kitara Resurrected
 tags:
   - kitara
 
@@ -43,4 +43,4 @@ Everything is clear. The goal is:
 Because new screen shape is a little different I need to make a screen hole bigger, print a bazel and glue it into the main case.
 Looks like everything fits. Just need to make all those things work together.
 
-See you in the next part.
+See you in the next one.
