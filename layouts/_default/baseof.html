@@ -8,7 +8,17 @@
 
   {{ partial "title.html" . }}
 
-  <link href="{{ .Permalink }}" rel="canonical" />
+
+  {{ $url := "https://fazibear.me" }}
+  {{ if eq .Section "story" }}
+  {{ $url = "https://blog.fazibear.me" }}
+  {{ else if eq .Section "til" }}
+  {{ $url = "https://til.fazibear.me" }}
+  {{ else if eq .Section "project" }}
+  {{ $url = "https://projects.fazibear.me" }}
+  {{ end }}
+
+    <link href="{{ $url }}/{{ .Slug }}" rel="canonical" />
   <link href="/images/favicon.png" rel="icon" />
 
   <link rel="me" href="https://hachyderm.io/@fazibear" />
