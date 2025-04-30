@@ -14,7 +14,7 @@
   <meta charset="utf-8" />
   {{ if isset .Params "redirect_to" }}
     <meta http-equiv="refresh" content="0; url={{ .Params.redirect_to }}">
-  {{ else if (eq .Section "til") }}
+  {{ else if (eq .Section "til") | or (eq .Section "project") }}
     <meta http-equiv="refresh" content="0; url={{ $url }}/{{ .Slug }}">
   {{ end }}
   <meta content="{{ .Site.Params.Author }}" name="author" />
