@@ -2,16 +2,6 @@
 <html lang="en" ontouchmove>
 
 <head>
-  <meta charset="utf-8" />
-  {{ if isset .Params "redirect_to" }}
-    <meta http-equiv="refresh" content="0; url={{ .Params.redirect_to }}">
-  {{ end }}
-  <meta content="{{ .Site.Params.Author }}" name="author" />
-  <meta content="{{ .Site.Params.Description }}" name="description" />
-
-  {{ partial "title.html" . }}
-
-
   {{ $url := "https://fazibear.me" }}
   {{ if eq .Section "story" }}
   {{ $url = "https://blog.fazibear.me" }}
@@ -20,6 +10,17 @@
   {{ else if eq .Section "project" }}
   {{ $url = "https://projects.fazibear.me" }}
   {{ end }}
+
+  <meta charset="utf-8" />
+  {{ if isset .Params "redirect_to" }}
+    <meta http-equiv="refresh" content="0; url={{ .Params.redirect_to }}">
+  {{ else if (eq .Section "til") }}
+    <meta http-equiv="refresh" content="0; url={{ $url }}/{{ .Slug }}">
+  {{ end }}
+  <meta content="{{ .Site.Params.Author }}" name="author" />
+  <meta content="{{ .Site.Params.Description }}" name="description" />
+
+  {{ partial "title.html" . }}
 
   <link href="{{ $url }}/{{ .Slug }}" rel="canonical" />
   <link href="/images/favicon.png" rel="icon" />
