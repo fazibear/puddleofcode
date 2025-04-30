@@ -3,6 +3,7 @@ date: 2024-05-08
 title: Youtubby
 image: /images/projects/youtubby.png
 featured: 6
+redirect_to: https://projects.fazibear.me/youtubby
 ---
 
 Desktop Youtube Music Player

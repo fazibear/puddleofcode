@@ -2,6 +2,7 @@
 title: Ruby Gems
 image: /images/projects/rubygem.png
 featured: 14
+redirect_to: https://projects.fazibear.me/ruby-gems
 ---
 
 Ruby gems I've created.

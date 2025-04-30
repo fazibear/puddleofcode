@@ -7,6 +7,7 @@ tags:
   - elixir
   - credo
   - docker
+redirect_to: https://projects.fazibear.me/elixir-engine-for-codeclimate
 ---
 
 

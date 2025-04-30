@@ -3,6 +3,7 @@ date: 2015-06-21
 title: Inesita
 image: /images/projects/inesita.png
 featured: 5
+redirect_to: https://projects.fazibear.me/inesita
 ---
 
 Inesita is a web frontend framework in Ruby.

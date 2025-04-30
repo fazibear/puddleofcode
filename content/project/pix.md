@@ -3,6 +3,7 @@ date: 2017-11-11
 title: pix
 image: /images/projects/pix.png
 featured: 2
+redirect_to: https://projects.fazibear.me/pix
 ---
 
 Pixel frame like project, but with Raspberry Pi inside.

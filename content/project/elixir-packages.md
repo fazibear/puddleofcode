@@ -2,6 +2,7 @@
 title: Elixir Packages
 image: /images/projects/elixirpackage.png
 featured: 12
+redirect_to: https://projects.fazibear.me/elixir-packages
 ---
 
 Elixir packages I've created.

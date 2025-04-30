@@ -4,6 +4,7 @@ title: fazic
 image: /images/projects/fazic.png
 featured: 1
 description: Fantasy retro computer with built-in basic interpreter.
+redirect_to: https://projects.fazibear.me/fazic
 ---
 
 FAZIC is a fantasy retro computer.

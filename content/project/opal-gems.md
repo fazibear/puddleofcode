@@ -2,6 +2,7 @@
 title: Opal Gems
 image: /images/projects/opalgem.png
 featured: 15
+redirect_to: https://projects.fazibear.me/opal-gems
 ---
 
 Opal Gems made by me.

@@ -3,6 +3,7 @@ date: 2016-04-01
 title: inesid
 image: /images/projects/inesid.png
 featured: 3
+redirect_to: https://projects.fazibear.me/inesid
 ---
 
 Open source Retro Web SID Player

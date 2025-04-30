@@ -3,6 +3,7 @@ date: 2015-12-12
 title: asciifyme
 image: /images/projects/asciifyme.png
 featured: 9
+redirect_to: https://projects.fazibear.me/asciifyme
 ---
 Funny app that turns your face into ascii art!
 

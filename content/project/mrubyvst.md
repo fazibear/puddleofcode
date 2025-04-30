@@ -3,6 +3,7 @@ date: 2015-03-03
 title: MRuby embedded in VST
 image: /images/projects/mrubyvst.png
 featured: 98
+redirect_to: https://projects.fazibear.me/mrubyvst
 ---
 
 VST plugin with MRuby as a scripting language.

@@ -8,6 +8,7 @@ tags:
   - phoenix
   - websocket
   - javascript
+redirect_to: https://projects.fazibear.me/sprint-poker
 ---
 Online estimation tool for Agile teams.
 

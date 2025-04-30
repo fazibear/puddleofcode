@@ -3,6 +3,9 @@
 
 <head>
   <meta charset="utf-8" />
+  {{ if isset .Params "redirect_to" }}
+    <meta http-equiv="refresh" content="0; url={{ .Params.redirect_to }}">
+  {{ end }}
   <meta content="{{ .Site.Params.Author }}" name="author" />
   <meta content="{{ .Site.Params.Description }}" name="description" />
 
@@ -18,7 +21,7 @@
   {{ $url = "https://projects.fazibear.me" }}
   {{ end }}
 
-    <link href="{{ $url }}/{{ .Slug }}" rel="canonical" />
+  <link href="{{ $url }}/{{ .Slug }}" rel="canonical" />
   <link href="/images/favicon.png" rel="icon" />
 
   <link rel="me" href="https://hachyderm.io/@fazibear" />
