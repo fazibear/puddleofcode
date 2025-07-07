@@ -35,6 +35,18 @@ markup:
     style: catppuccin-mocha
     tabWidth: 2
 
+minify:
+  tdewolff:
+    html:
+      keepComments: false
+      keepConditionalComments: false
+      keepDefaultAttrVals: true
+      keepDocumentTags: true
+      keepEndTags: true
+      keepQuotes: true
+      keepSpecialComments: true
+      keepWhitespace: false
+
 Params:
   title: Puddle Of Code
   author: Michał Kalbarczyk
